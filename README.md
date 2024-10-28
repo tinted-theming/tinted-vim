@@ -209,8 +209,7 @@ this to your `~/.vimrc`:
 
 ```vim
 function! s:tinted_customize() abort
-  call Base16hi("MatchParen", g:base16_gui05, g:base16_gui03, g:base16_cterm05, g:base16_cterm03, "bold,italic", "")
-  " Or Base24hi for base24 themes
+  call Tinted_Hi("MatchParen", g:tinted_gui05, g:tinted_gui03, g:tinted_cterm05, g:tinted_cterm03, "bold,italic", "")
 endfunction
 
 augroup on_change_colorschema

@@ -1,8 +1,8 @@
 " vi:syntax=vim
 
 " tinted-vim (https://github.com/tinted-theming/tinted-vim)
-" Scheme name: Mellow Purple
-" Scheme author: gidsi
+" Scheme name: Summerfruit Dark
+" Scheme author: Christopher Corley (http://christop.club/)
 " Template author: Tinted Theming (https://github.com/tinted-theming)
 
 " This enables the coresponding base16-shell script to run so that
@@ -11,59 +11,59 @@
 "   let g:tinted_shell_path=path/to/shell/scripts
 if !has("gui_running")
   if exists("g:tinted_shell_path")
-    execute "silent !/bin/sh ".g:tinted_shell_path."/base24/mellow-purple.sh"
+    execute "silent !/bin/sh ".g:tinted_shell_path."/base24/summerfruit-dark.sh"
   endif
 endif
 
 " GUI color definitions
-let s:gui00        = "1e0528"
-let g:tinted_gui00 = "1e0528"
-let s:gui01        = "1a092d"
-let g:tinted_gui01 = "1a092d"
-let s:gui02        = "331354"
-let g:tinted_gui02 = "331354"
-let s:gui03        = "320f55"
-let g:tinted_gui03 = "320f55"
-let s:gui04        = "873582"
-let g:tinted_gui04 = "873582"
-let s:gui05        = "ffeeff"
-let g:tinted_gui05 = "ffeeff"
-let s:gui06        = "ffeeff"
-let g:tinted_gui06 = "ffeeff"
-let s:gui07        = "f8c0ff"
-let g:tinted_gui07 = "f8c0ff"
-let s:gui08        = "00d9e9"
-let g:tinted_gui08 = "00d9e9"
-let s:gui09        = "aa00a3"
-let g:tinted_gui09 = "aa00a3"
-let s:gui0A        = "955ae7"
-let g:tinted_gui0A = "955ae7"
-let s:gui0B        = "05cb0d"
-let g:tinted_gui0B = "05cb0d"
-let s:gui0C        = "b900b1"
-let g:tinted_gui0C = "b900b1"
-let s:gui0D        = "550068"
-let g:tinted_gui0D = "550068"
-let s:gui0E        = "8991bb"
-let g:tinted_gui0E = "8991bb"
-let s:gui0F        = "4d6fff"
-let g:tinted_gui0F = "4d6fff"
-let s:gui10        = "1e0528"
-let g:tinted_gui10 = "1e0528"
-let s:gui11        = "1e0528"
-let g:tinted_gui11 = "1e0528"
-let s:gui12        = "00d9e9"
-let g:tinted_gui12 = "00d9e9"
-let s:gui13        = "955ae7"
-let g:tinted_gui13 = "955ae7"
-let s:gui14        = "05cb0d"
-let g:tinted_gui14 = "05cb0d"
-let s:gui15        = "b900b1"
-let g:tinted_gui15 = "b900b1"
-let s:gui16        = "550068"
-let g:tinted_gui16 = "550068"
-let s:gui17        = "8991bb"
-let g:tinted_gui17 = "8991bb"
+let s:gui00        = "000000"
+let g:tinted_gui00 = "000000"
+let s:gui01        = "202020"
+let g:tinted_gui01 = "202020"
+let s:gui02        = "303030"
+let g:tinted_gui02 = "303030"
+let s:gui03        = "505050"
+let g:tinted_gui03 = "505050"
+let s:gui04        = "b0b0b0"
+let g:tinted_gui04 = "b0b0b0"
+let s:gui05        = "d0d0d0"
+let g:tinted_gui05 = "d0d0d0"
+let s:gui06        = "e0e0e0"
+let g:tinted_gui06 = "e0e0e0"
+let s:gui07        = "ffffff"
+let g:tinted_gui07 = "ffffff"
+let s:gui08        = "ff0086"
+let g:tinted_gui08 = "ff0086"
+let s:gui09        = "fd8900"
+let g:tinted_gui09 = "fd8900"
+let s:gui0A        = "aba800"
+let g:tinted_gui0A = "aba800"
+let s:gui0B        = "00c918"
+let g:tinted_gui0B = "00c918"
+let s:gui0C        = "1faaaa"
+let g:tinted_gui0C = "1faaaa"
+let s:gui0D        = "3777e6"
+let g:tinted_gui0D = "3777e6"
+let s:gui0E        = "ad00a1"
+let g:tinted_gui0E = "ad00a1"
+let s:gui0F        = "cc6633"
+let g:tinted_gui0F = "cc6633"
+let s:gui10        = "101010"
+let g:tinted_gui10 = "101010"
+let s:gui11        = "000000"
+let g:tinted_gui11 = "000000"
+let s:gui12        = "ff80c3"
+let g:tinted_gui12 = "ff80c3"
+let s:gui13        = "fffd6e"
+let g:tinted_gui13 = "fffd6e"
+let s:gui14        = "4fff63"
+let g:tinted_gui14 = "4fff63"
+let s:gui15        = "3fdcdc"
+let g:tinted_gui15 = "3fdcdc"
+let s:gui16        = "74a0ee"
+let g:tinted_gui16 = "74a0ee"
+let s:gui17        = "f400e4"
+let g:tinted_gui17 = "f400e4"
 
 " Terminal color definitions
 let s:cterm00        = "00"
@@ -135,22 +135,22 @@ endif
 
 " Neovim terminal colours
 if has("nvim")
-  let g:terminal_color_0  = "#1e0528"
-  let g:terminal_color_1  = "#00d9e9"
-  let g:terminal_color_2  = "#05cb0d"
-  let g:terminal_color_3  = "#955ae7"
-  let g:terminal_color_4  = "#550068"
-  let g:terminal_color_5  = "#8991bb"
-  let g:terminal_color_6  = "#b900b1"
-  let g:terminal_color_7  = "#ffeeff"
-  let g:terminal_color_8  = "#320f55"
-  let g:terminal_color_9  = "#00d9e9"
-  let g:terminal_color_10 = "#05cb0d"
-  let g:terminal_color_11 = "#955ae7"
-  let g:terminal_color_12 = "#550068"
-  let g:terminal_color_13 = "#8991bb"
-  let g:terminal_color_14 = "#b900b1"
-  let g:terminal_color_15 = "#f8c0ff"
+  let g:terminal_color_0  = "#000000"
+  let g:terminal_color_1  = "#ff0086"
+  let g:terminal_color_2  = "#00c918"
+  let g:terminal_color_3  = "#aba800"
+  let g:terminal_color_4  = "#3777e6"
+  let g:terminal_color_5  = "#ad00a1"
+  let g:terminal_color_6  = "#1faaaa"
+  let g:terminal_color_7  = "#d0d0d0"
+  let g:terminal_color_8  = "#505050"
+  let g:terminal_color_9  = "#ff80c3"
+  let g:terminal_color_10 = "#4fff63"
+  let g:terminal_color_11 = "#fffd6e"
+  let g:terminal_color_12 = "#74a0ee"
+  let g:terminal_color_13 = "#f400e4"
+  let g:terminal_color_14 = "#3fdcdc"
+  let g:terminal_color_15 = "#ffffff"
   let g:terminal_color_background = g:terminal_color_0
   let g:terminal_color_foreground = g:terminal_color_5
   if &background == "light"
@@ -159,22 +159,22 @@ if has("nvim")
   endif
 elseif has("terminal")
   let g:terminal_ansi_colors = [
-        \ "#1e0528",
-        \ "#00d9e9",
-        \ "#05cb0d",
-        \ "#aa00a3",
-        \ "#550068",
-        \ "#8991bb",
-        \ "#b900b1",
-        \ "#ffeeff",
-        \ "#331354",
-        \ "#00d9e9",
-        \ "#05cb0d",
-        \ "#955ae7",
-        \ "#550068",
-        \ "#8991bb",
-        \ "#b900b1",
-        \ "#f8c0ff",
+        \ "#000000",
+        \ "#ff0086",
+        \ "#00c918",
+        \ "#fd8900",
+        \ "#3777e6",
+        \ "#ad00a1",
+        \ "#1faaaa",
+        \ "#e0e0e0",
+        \ "#303030",
+        \ "#ff80c3",
+        \ "#4fff63",
+        \ "#fffd6e",
+        \ "#74a0ee",
+        \ "#f400e4",
+        \ "#3fdcdc",
+        \ "#ffffff",
         \ ]
 endif
 
@@ -190,7 +190,7 @@ endif
 " Theme setup
 hi clear
 syntax reset
-let g:colors_name = "base24-mellow-purple"
+let g:colors_name = "base24-summerfruit-dark"
 
 " Highlighting function
 " Optional variables are attributes and guisp

@@ -11,7 +11,7 @@
 "   let g:tinted_shell_path=path/to/shell/scripts
 if !has("gui_running")
   if exists("g:tinted_shell_path")
-    execute "silent !/bin/sh ".g:tinted_shell_path."/base24/{{scheme-slug}}.sh"
+    execute "silent !/bin/sh ".g:tinted_shell_path."/{{scheme-system}}/{{scheme-slug}}.sh"
   endif
 endif
 

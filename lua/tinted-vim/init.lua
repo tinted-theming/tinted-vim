@@ -1,10 +1,3 @@
--- Generate help tags
-
-local doc_path = debug.getinfo(1, "S").source:sub(2):match("(.*)/lua/.*$") .. "/doc"
-if vim.fn.isdirectory(doc_path) == 1 then
-    vim.cmd.helptags(doc_path)
-end
-
 -- Add custom highlights for list in `:h highlight-groups`.
 local function highlight_groups(patterns)
     local ns = vim.api.nvim_create_namespace('vimhelp')
@@ -38,7 +31,8 @@ vim.api.nvim_create_autocmd("BufEnter", {
             { start = [[DEFAULT SYNTAX HIGHLIGHTS]],      stop = '^======', match = '^(%w+)\t' },
             { start = [[TREESITTER SYNTAX HIGHLIGHTS]],   stop = '^======', match = '^@[%w%p]+', },
             { start = [[LSP SEMANTIC SYNTAX HIGHLIGHTS]], stop = '^======', match = '^@[%w%p]+' },
-            { start = [[LSP HIGHLIGHTS]],                 stop = [[\%$]],   match = '^(%w+)' },
+            { start = [[LSP HIGHLIGHTS]],                 stop = '^======', match = '^(%w+)' },
+            { start = [[DIAGNOSTIC HIGHLIGHTS]],          stop = '^======', match = '^(%w+)' },
         })
     end
 })

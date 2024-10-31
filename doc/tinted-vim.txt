@@ -1,10 +1,37 @@
 *tinted-vim.txt*
 
-==============================================================================
-HIGHLIGHTS                                             *tinted-vim-highlights*
+
+			TINTED-VIM DOCUMENTATION
+
+
+                                                                  *tinted-vim*
+                                                           *neovim-highlights*
+A comprehensive guide to Neovim highlight groups
+
+    1. Introduction ........................... |tinted-vim-introduction|
+    2. GUI Highlights ......................... |tinted-vim-gui|
+    3. Default Syntax Highlights .............. |tinted-vim-syntax|
+    4. Treesitter Syntax Highlights ........... |tinted-vim-treesitter|
+    5. LSP Semantic Syntax Highlights ......... |tinted-vim-lsp-semantic|
+    6. LSP Highlights ......................... |tinted-vim-lsp|
+    7. Diagnostic Highlights .................. |tinted-vim-diagnostic|
+    8. Language Specific Highlights ........... |tinted-vim-lang|
+       Lua .................................... |tinted-vim-lang-lua|
+       Rust ................................... |tinted-vim-lang-rust|
+       Vimscript............................... |tinted-vim-lang-vimscript|
 
 ==============================================================================
-GUI HIGHLIGHTS
+1. INTRODUCTION                                      *tinted-vim-introduction*
+
+This document provides a comprehensive reference for all highlight groups in
+Neovim. It includes GUI highlights, syntax highlights, Treesitter highlights,
+LSP highlights, and diagnostic highlights. Each section contains detailed
+descriptions of the highlight groups and their intended usage.
+
+==============================================================================
+2. GUI HIGHLIGHTS                                             *tinted-vim-gui*
+
+Source: |highlight-groups|
 
 ColorColumn	    Used for the columns set with 'colorcolumn'.
 Conceal		    Placeholder characters substituted for concealed
@@ -118,7 +145,9 @@ Tooltip		    Current font, background and foreground of the tooltips.
 		    Applicable highlight arguments: font, guibg, guifg.
 
 ==============================================================================
-DEFAULT SYNTAX HIGHLIGHTS
+3. DEFAULT SYNTAX HIGHLIGHTS                               *tinted-vim-syntax*
+
+Source: |group-name|
 
 Comment		any comment
 
@@ -172,7 +201,9 @@ Changed		changed line in a diff
 Removed		removed line in a diff
 
 ==============================================================================
-TREESITTER SYNTAX HIGHLIGHTS
+4. TREESITTER SYNTAX HIGHLIGHTS                        *tinted-vim-treesitter*
+
+Source: |treesitter-highlight-groups|
 
 @variable                       various variable names
 @variable.builtin               built-in variable names (e.g. `this`, `self`)
@@ -289,9 +320,10 @@ TREESITTER SYNTAX HIGHLIGHTS
 @tag.attribute          XML-style tag attributes
 @tag.delimiter          XML-style tag delimiters
 
-================================================================================
+==============================================================================
+5. LSP SEMANTIC SYNTAX HIGHLIGHTS                    *tinted-vim-lsp-semantic*
 
-LSP SEMANTIC SYNTAX HIGHLIGHTS
+Source: |lsp-semantic-highlight|
 
 @lsp.type.class          Identifiers that declare or reference a class type
 @lsp.type.comment        Tokens that represent a comment
@@ -328,9 +360,10 @@ LSP SEMANTIC SYNTAX HIGHLIGHTS
 @lsp.mod.readonly        Readonly variables and member fields (constants)
 @lsp.mod.static          Class members (static members)
 
+================================================================================
+6. LSP HIGHLIGHTS                                               *tinted-vim-lsp*
 
-==============================================================================
-LSP HIGHLIGHTS
+Source: |lsp-highlight|
 
 LspReferenceText          used for highlighting "text" references
 LspReferenceRead          used for highlighting "read" references
@@ -348,7 +381,9 @@ LspSignatureActiveParameter
 
 
 ==============================================================================
-DIAGNOSTIC HIGHLIGHTS
+7. DIAGNOSTIC HIGHLIGHTS                               *tinted-vim-diagnostic*
+
+Source: |diagnostic-highlights|
 
 DiagnosticError
     Used as the base highlight group.
@@ -415,5 +450,497 @@ DiagnosticDeprecated
 DiagnosticUnnecessary
     Used for unnecessary or unused code.
 
-================================================================================
+==============================================================================
+8. LANGUAGE SPECIFIC HIGHLIGHTS                              *tinted-vim-lang*
+
+The ones you can actually see could differ, because the highlights defined 
+in |lsp-semantic-highlight| are not applied here.
+
+------------------------------------------------------------------------------
+Lua							 *tinted-vim-lang-lua*
+>lua
+    -- Variable declarations and assignments
+    local x = 10
+    local y, z = 20, 30
+
+    -- Arithmetic expressions
+    local result = (x + y) * z / 2
+
+    -- Function declaration
+    local function calculateArea(length, width)
+	return length * width
+    end
+
+    -- Table constructor
+    local person = {
+	name = "John",
+	age = 25,
+	hobbies = {"reading", "gaming", "coding"}
+    }
+
+    -- Control structures
+    if x > 5 then
+	print("x is greater than 5")
+    elseif x < 5 then
+	print("x is less than 5")
+    else
+	print("x equals 5")
+    end
+
+    -- Loops
+    for i = 1, 5 do
+	print(i)
+    end
+
+    local count = 0
+    while count < 3 do
+	count = count + 1
+	print("Count: " .. count)
+    end
+
+    repeat
+	x = x - 1
+    until x == 0
+
+    -- Iterator-based for loop
+    for key, value in pairs(person) do
+	print(key, value)
+    end
+
+    -- Function calls
+    local area = calculateArea(10, 20)
+    print("Area:", area)
+
+    -- Method calls
+    local string_example = "Hello"
+    print(string_example:upper())
+
+    -- Anonymous function
+    local multiply = function(a, b)
+	return a * b
+    end
+
+    -- Closures
+    local function counter()
+	local count = 0
+	return function()
+	    count = count + 1
+	    return count
+	end
+    end
+
+    -- Multiple return values
+    local function getCoordinates()
+	return 100, 200, 300
+    end
+
+    -- String concatenation
+    local fullName = "John" .. " " .. "Doe"
+
+    -- Boolean expressions
+    local isValid = (x > 0) and (y < 100) or (z == 30)
+
+    -- Table indexing
+    local firstHobby = person.hobbies[1]
+    person["age"] = 26
+
+    -- Local block
+    do
+	local blockVar = 42
+	print(blockVar)
+    end
+
+    -- Error handling
+    local status, err = pcall(function()
+	error("This is an error")
+    end)
+
+    -- Varargs
+    local function printAll(...)
+	local args = {...}
+	for i, v in ipairs(args) do
+	    print(i, v)
+	end
+    end
+
+    -- Metatables
+    local mt = {
+	__add = function(a, b)
+	    return a.value + b.value
+	end
+    }
+
+    local obj1 = {value = 10}
+    local obj2 = {value = 20}
+    setmetatable(obj1, mt)
+    setmetatable(obj2, mt)
+
+    -- Comments (single-line and multi-line)
+    --[[ 
+	This is a 
+	multi-line comment
+    ]]
+
+    -- Numeric literals
+    local numbers = {
+	integer = 42,
+	float = 3.14,
+	scientific = 1.5e3,
+	hex = 0xFF
+    }
+
+    -- String literals
+    local strings = {
+	single = 'single quotes',
+	double = "double quotes",
+	multiline = [[
+	    This is a
+	    multi-line string
+	]]
+    }
+
+    -- Binary operators
+    local binaryOps = {
+	addition = 1 + 2,
+	subtraction = 3 - 1,
+	multiplication = 4 * 2,
+	division = 8 / 2,
+	modulo = 7 % 3,
+	power = 2 ^ 3,
+	concatenation = "a" .. "b"
+    }
+
+    -- Unary operators
+    local unaryOps = {
+	negation = -x,
+	length = #"hello",
+	logicalNot = not true
+    }
+
+    -- Function calls with method syntax
+    local t = {
+	method = function(self, x)
+	    return x * 2
+	end
+    }
+    t:method(5)
+<
+------------------------------------------------------------------------------
+Rust     					        *tinted-vim-lang-rust*
+>rust
+    // External crate declaration
+    extern crate some_library;
+
+    // Use declarations
+    use std::collections::HashMap;
+    use std::sync::{Arc, Mutex};
+
+    // Constants and static variables
+    const MAX_SIZE: usize = 100;
+    static GLOBAL_COUNTER: AtomicUsize = AtomicUsize::new(0);
+
+    // Type aliases
+    type Result<T> = std::result::Result<T, Box<dyn Error>>;
+
+    // Traits
+    trait Animal {
+        // Associated types
+        type Sound;
+        
+        // Required methods
+        fn make_sound(&self) -> Self::Sound;
+        
+        // Default methods
+        fn describe(&self) -> String {
+            String::from("Some animal")
+        }
+    }
+
+    // Structs
+    #[derive(Debug, Clone)]
+    struct Dog {
+        name: String,
+        age: u8,
+        tags: Vec<String>,
+    }
+
+    // Enums
+    #[derive(Debug)]
+    enum PetType {
+        Dog(Dog),
+        Cat { name: String, lives: u8 },
+        Bird(String),
+    }
+
+    // Implementation blocks
+    impl Dog {
+        // Associated function (static method)
+        pub fn new(name: String, age: u8) -> Self {
+            Dog {
+                name,
+                age,
+                tags: Vec::new(),
+            }
+        }
+
+        // Instance method
+        pub fn add_tag(&mut self, tag: String) {
+            self.tags.push(tag);
+        }
+    }
+
+    // Trait implementation
+    impl Animal for Dog {
+        type Sound = String;
+
+        fn make_sound(&self) -> Self::Sound {
+            format!("{} says: Woof!", self.name)
+        }
+    }
+
+    // Generic function
+    fn process_data<T: Display + Clone>(data: T) -> String {
+        format!("Processed: {}", data)
+    }
+
+    // Async function
+    async fn fetch_data(url: &str) -> Result<String> {
+        // Await expression
+        let response = reqwest::get(url).await?;
+        let text = response.text().await?;
+        Ok(text)
+    }
+
+    // Main function with error handling
+    fn main() -> Result<()> {
+        // Variable declaration
+        let mut map = HashMap::new();
+        
+        // Insert into HashMap
+        map.insert("key1", "value1");
+        
+        // Pattern matching
+        match map.get("key1") {
+            Some(value) => println!("Found: {}", value),
+            None => println!("Not found"),
+        }
+        
+        // Loop constructs
+        for (key, value) in &map {
+            println!("{}: {}", key, value);
+        }
+        
+        while let Some(value) = some_iterator.next() {
+            println!("Value: {}", value);
+        }
+        
+        // Closure
+        let multiply = |x: i32, y: i32| x * y;
+        
+        // If-else expression
+        let result = if true {
+            "true branch"
+        } else {
+            "false branch"
+        };
+        
+        // Block expression
+        let computed = {
+            let x = 10;
+            let y = 20;
+            x + y
+        };
+        
+        // Array
+        let array = [1, 2, 3, 4, 5];
+        
+        // Slice
+        let slice = &array[1..4];
+        
+        // Tuple
+        let tuple = (1, "hello", 3.14);
+        
+        // Reference and dereference
+        let ref_value = &computed;
+        let deref_value = *ref_value;
+        
+        // Unsafe block
+        unsafe {
+            let ptr = &computed as *const i32;
+            println!("Raw pointer value: {}", *ptr);
+        }
+        
+        // Macro invocation
+        println!("Hello, {}", "world");
+        
+        // Error handling with ?
+        let dog = Dog::new("Rover".to_string(), 5);
+        dog.add_tag("friendly".to_string())?;
+        
+        // Return statement
+        Ok(())
+    }
+
+    // Module declaration
+    mod tests {
+        use super::*;
+
+        // Test function
+        #[test]
+        fn test_dog_sound() {
+            let dog = Dog::new("Rex".to_string(), 3);
+            assert_eq!(dog.make_sound(), "Rex says: Woof!");
+        }
+    }
+<
+------------------------------------------------------------------------------
+Vimscript					   *tinted-vim-lang-vimscript*
+>vim
+    " Function definition
+    function! CompleteExample(arg1, ...)
+	" Variable declarations
+	let l:local_var = 'local'
+	let g:global_var = 'global'
+	let s:script_var = 'script'
+	
+	" Conditional statements
+	if a:arg1 == 'test'
+	    echo 'Test condition'
+	elseif a:arg1 == 'other'
+	    echo 'Other condition'
+	else
+	    echo 'Default condition'
+	endif
+
+	" Loop constructs
+	for item in ['a', 'b', 'c']
+	    echo 'Item: ' . item
+	endfor
+
+	let counter = 0
+	while counter < 5
+	    let counter += 1
+	    if counter == 3
+		continue
+	    endif
+	    echo 'Counter: ' . counter
+	endwhile
+
+	" Try-catch block
+	try
+	    throw 'Custom error'
+	catch /Custom.*/
+	    echo 'Caught error: ' . v:exception
+	finally
+	    echo 'Cleanup'
+	endtry
+
+	" Dictionary
+	let dict = {
+	    \ 'key1': 'value1',
+	    \ 'key2': 'value2',
+	    \ 'nested': {'subkey': 'subvalue'}
+	    \ }
+
+	" List
+	let list = ['item1', 'item2', ['nested', 'items']]
+
+	" Function calls
+	call SomeFunction()
+	call SomeOtherFunction('arg1', 'arg2')
+
+	" Expression statement
+	let result = 10 + 20 * 2
+
+	" String concatenation
+	let str = 'Hello' . ' ' . 'World'
+
+	" Regular expressions
+	let pattern = '\v^[a-zA-Z]+$'
+	if 'test' =~# pattern
+	    echo 'Matches pattern'
+	endif
+
+	" Lambda expression (Vim 8.0+)
+	let Callback = {x -> x * 2}
+	echo Callback(5)
+
+	" Dictionary methods
+	let dict.newkey = 'newvalue'
+	unlet dict.key1
+
+	" List operations
+	call add(list, 'new_item')
+	let sliced_list = list[0:1]
+
+	" Command execution
+	execute 'echo "Dynamic command"'
+	normal! gg
+
+	" Return statement
+	return {'status': 'success', 'data': l:local_var}
+    endfunction
+
+    " Autoload function
+    function! mypackage#module#Function()
+	echo 'Autoload function'
+    endfunction
+
+    " Command definition
+    command! -nargs=* MyCommand call CompleteExample(<f-args>)
+
+    " Autocommand
+    augroup MyAutoGroup
+	autocmd!
+	autocmd BufWritePre * call SomeFunction()
+    augroup END
+
+    " Mapping
+    nnoremap <silent> <Leader>x :call CompleteExample('test')<CR>
+
+    " Script-local function
+    function! s:HelperFunction()
+	echo 'Helper function'
+    endfunction
+
+    " Class-like structure (dictionary as object)
+    let s:MyClass = {}
+
+    function! s:MyClass.new()
+	let instance = copy(self)
+	let instance.data = ''
+	return instance
+    endfunction
+
+    function! s:MyClass.method()
+	echo 'Method called'
+    endfunction
+
+    " Variable scope modifiers
+    let &option = 'value'
+    let @a = 'register content'
+    let $ENV_VAR = 'environment variable'
+
+    " Built-in functions usage
+    echo strlen('test')
+    echo type([])
+    echo exists('g:var')
+
+    " Operator expressions
+    let num += 5
+
+    " Ternary expression
+    let result = condition ? 'true' : 'false'
+
+    " Line continuation
+    let long_string = "This is a very long string " .
+	\ "that continues on " .
+	\ "multiple lines"
+
+    " Range specification
+    function! RangeFunction() range
+	echo a:firstline . ' to ' . a:lastline
+    endfunction
+<
+==============================================================================
 vim:tw=78:ts=8:noet:ft=help:norl:

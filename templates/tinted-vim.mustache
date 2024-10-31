@@ -89,7 +89,7 @@ let g:tinted_cterm0E = '05'
 
 " `base16_colorspace` and `base16colorspace` are legacy properties and 
 " exist to keep existing setups from breaking
-if (exists('base16_colorspace') && base16_colorspace == '256') || (exists('tinted_colorspace') && tinted_colorspace == '256')
+if (exists('base16_colorspace') && base16_colorspace ==? '256') || (exists('tinted_colorspace') && tinted_colorspace ==? '256')
   let s:cterm01        = '18'
   let g:tinted_cterm01 = '18'
   let s:cterm02        = '19'
@@ -153,7 +153,7 @@ if has('nvim')
   let g:terminal_color_15 = '#{{base07-hex}}'
   let g:terminal_color_background = g:terminal_color_0
   let g:terminal_color_foreground = g:terminal_color_5
-  if &background == 'light'
+  if &background ==? 'light'
     let g:terminal_color_background = g:terminal_color_7
     let g:terminal_color_foreground = g:terminal_color_2
   endif
@@ -178,7 +178,7 @@ elseif has('terminal')
         \ ]
 endif
 
-if exists('g:tinted_background_transparent') && g:tinted_background_transparent == '1'
+if exists('g:tinted_background_transparent') && g:tinted_background_transparent ==? '1'
   let s:guibg = 'NONE'
   let s:ctermbg = 'NONE'
 else
@@ -201,30 +201,30 @@ function! g:Tinted_Hi(group, guifg, guibg, ctermfg, ctermbg, ...)
   " See :help highlight-guifg
   let l:gui_special_names = ['NONE', 'bg', 'background', 'fg', 'foreground']
 
-  if a:guifg != ''
+  if a:guifg !=? ''
     if index(l:gui_special_names, a:guifg) >= 0
       exec 'hi! ' . a:group . ' guifg=' . a:guifg
     else
       exec 'hi! ' . a:group . ' guifg=#' . a:guifg
     endif
   endif
-  if a:guibg != ''
+  if a:guibg !=? ''
     if index(l:gui_special_names, a:guibg) >= 0
       exec 'hi! ' . a:group . ' guibg=' . a:guibg
     else
       exec 'hi! ' . a:group . ' guibg=#' . a:guibg
     endif
   endif
-  if a:ctermfg != ''
+  if a:ctermfg !=? ''
     exec 'hi! ' . a:group . ' ctermfg=' . a:ctermfg
   endif
-  if a:ctermbg != ''
+  if a:ctermbg !=? ''
     exec 'hi! ' . a:group . ' ctermbg=' . a:ctermbg
   endif
-  if l:attr != ''
+  if l:attr !=? ''
     exec 'hi! ' . a:group . ' gui=' . l:attr . ' cterm=' . l:attr
   endif
-  if l:guisp != ''
+  if l:guisp !=? ''
     if index(l:gui_special_names, l:guisp) >= 0
       exec 'hi! ' . a:group . ' guisp=' . l:guisp
     else

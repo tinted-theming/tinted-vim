@@ -19,6 +19,21 @@ The `onedark` theme:
 
 ![tinted-vim onedark]
 
+## Usage
+
+1. [Install](#installation) the plugin.
+1. Set a color scheme:
+
+   ```vim
+   :colorscheme base16-ayu-dark
+   ```
+
+1. Check the highlights with:
+
+   ```vim
+   :help tinted-vim
+   ```
+
 ## Terminal Themes
 
 For terminal Vim (non-gui) please ensure you are using a terminal theme.
@@ -28,6 +43,7 @@ terminal of choice.
 ## Installation
 
 ### Lazy.nvim
+
 ```lua
 {
     "tinted-theming/tinted-vim",
@@ -83,23 +99,23 @@ colors every time you do a `git pull` on the `tinted-vim` repo.
 
 1. Clone `tinted-vim` somewhere:
 
-  ```sh
-  git clone git://github.com/tinted-theming/tinted-vim.git ~/projects/tinted-vim
-  ```
+   ```sh
+   git clone git://github.com/tinted-theming/tinted-vim.git ~/projects/tinted-vim
+   ```
 
-2. Remove your old vim/nvim `colors/` directory if it exists:
+1. Remove your old vim/nvim `colors/` directory if it exists:
 
-  ```sh
-  rm -r ~/.vim/colors # Or ~/.config/nvim/colors for Neovim
-  ```
+   ```sh
+   rm -r ~/.vim/colors # Or ~/.config/nvim/colors for Neovim
+   ```
 
-3. Symlink the colors directory:
+1. Symlink the colors directory:
 
-  ```sh 
-  ln -s ~/projects/tinted-vim/colors ~/.vim/colors
-  # Or for Neovim
-  # ln -s ~/projects/tinted-vim/colors ~/.config/nvim/colors
-  ```
+   ```sh
+   ln -s ~/projects/tinted-vim/colors ~/.vim/colors
+   # Or for Neovim
+   # ln -s ~/projects/tinted-vim/colors ~/.config/nvim/colors
+   ```
 
 ### Manual
 

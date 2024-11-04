@@ -87,7 +87,7 @@ let g:tinted_cterm0D = '04'
 let s:cterm0E        = '05'
 let g:tinted_cterm0E = '05'
 
-" `base16_colorspace` and `base16colorspace` are legacy properties and 
+" `base16_colorspace` and `base16colorspace` are legacy properties and
 " exist to keep existing setups from breaking
 if (exists('base16_colorspace') && base16_colorspace ==? '256') || (exists('tinted_colorspace') && tinted_colorspace ==? '256')
   let s:cterm01        = '18'
@@ -358,19 +358,19 @@ hi! link WinBarNC StatusLineNC
 " Standard syntax
 
 call <sid>hi('Comment',        s:gui03, '', s:cterm03, '', 'italic', '')
-                               
+
 call <sid>hi('Constant',       s:gui09, '', s:cterm09, '', 'none', '')
 call <sid>hi('String',         s:gui0B, '', s:cterm0B, '', 'italic', '')
 call <sid>hi('Character',      s:gui0C, '', s:cterm0C, '', 'none', '')
 call <sid>hi('Number',         s:gui09, '', s:cterm09, '', 'none', '')
 call <sid>hi('Boolean',        s:gui09, '', s:cterm09, '', 'none', '')
 call <sid>hi('Float',          s:gui09, '', s:cterm09, '', 'none', '')
-                               
+
 " The [spec](https://github.com/tinted-theming/base24/blob/main/styling.md) wants
 " `Identifier` mapped to base08 aka RED. I do not like it, too much RED.
 call <sid>hi('Identifier',     s:gui05, '', s:cterm05, '', 'none', '')
 call <sid>hi('Function',       s:gui0D, '', s:cterm0D, '', 'none', '')
-                               
+
 call <sid>hi('Statement',      s:gui17, '', s:cterm17, '', 'none', '')
 call <sid>hi('Conditional',    s:gui0E, '', s:cterm0E, '', 'none', '')
 call <sid>hi('Repeat',         s:gui0E, '', s:cterm0E, '', 'none', '')
@@ -378,24 +378,24 @@ call <sid>hi('Label',          s:gui0E, '', s:cterm0E, '', 'none', '')
 call <sid>hi('Operator',       s:gui07, '', s:cterm07, '', 'none', '')
 call <sid>hi('Keyword',        s:gui17, '', s:cterm17, '', 'none', '')
 call <sid>hi('Exception',      s:gui0E, '', s:cterm0E, '', 'none', '')
-                               
+
 call <sid>hi('PreProc',        s:gui0C, '', s:cterm0C, '', 'none', '')
 call <sid>hi('Include',        s:gui0C, '', s:cterm0C, '', 'none', '')
 call <sid>hi('Define',         s:gui0C, '', s:cterm0C, '', 'none', '')
 call <sid>hi('Macro',          s:gui0C, '', s:cterm0C, '', 'none', '')
 call <sid>hi('PreCondit',      s:gui0C, '', s:cterm0C, '', 'none', '')
-                               
+
 call <sid>hi('Type',           s:gui0A, '', s:cterm0A, '', 'none', '')
 call <sid>hi('StorageClass',   s:gui0A, '', s:cterm0A, '', 'none', '')
 call <sid>hi('Structure',      s:gui0A, '', s:cterm0A, '', 'none', '')
 call <sid>hi('Typedef',        s:gui0A, '', s:cterm0A, '', 'none', '')
-                               
+
 call <sid>hi('Special',        s:gui0C, '', s:cterm0C, '', 'none', '')
 call <sid>hi('SpecialChar',    s:gui0A, '', s:cterm0A, '', 'none', '')
 call <sid>hi('Tag',            s:gui08, '', s:cterm08, '', 'none', '')
 call <sid>hi('Delimiter',      s:gui05, '', s:cterm05, '', 'none', '')
 call <sid>hi('SpecialComment', s:gui0A, '', s:cterm0A, '', 'none', '')
-                              
+
 call <sid>hi('Debug',          s:gui08, '', s:cterm08, '', 'none', '')
 
 call <sid>hi('Underlined',     '', '', '', '', 'underline', '')
@@ -512,7 +512,7 @@ if has('nvim-0.8.0')
 
   hi! link @markup.list SpecialChar
   hi! link @markup.list.checked DiagnosticOk
-  hi! link @markup.list.unchecked DiagnosticError 
+  hi! link @markup.list.unchecked DiagnosticError
 
   hi! link @diff.plus Added
   hi! link @diff.minus Removed
@@ -558,7 +558,7 @@ if has('nvim-0.8.0')
   " @lsp.mod.deprecated      Symbols that should no longer be used
   " @lsp.mod.modification    Variable references where the variable is assigned to
   " @lsp.mod.readonly        Readonly variables and member fields (constants)
-  " @lsp.mod.static 
+  " @lsp.mod.static
 
   hi! link @lsp.type.escapeSequence @string.escape
   hi! link @lsp.type.punctuation @punctuation.delimiter
@@ -582,6 +582,9 @@ if has('nvim-0.8.0')
 
   " LUA
   hi! link @lsp.typemod.keyword.documentation.lua @tag
+  hi! link @lsp.type.property.lua @lsp
+  hi! link @lsp.type.method.lua @lsp
+  hi! link @lsp.typemod.method.injected.lua @lsp.type.method
 
   " Markdown
   hi! link @lsp.type.class.markdown @lsp
@@ -619,7 +622,7 @@ call <sid>hi('DiagnosticFloatingWarn',   s:gui09, s:gui01, s:cterm09, s:cterm01,
 call <sid>hi('DiagnosticFloatingInfo',   s:gui0C, s:gui01, s:cterm0C, s:cterm01, '', '')
 call <sid>hi('DiagnosticFloatingHint',   s:gui0D, s:gui01, s:cterm0D, s:cterm01, '', '')
 call <sid>hi('DiagnosticFloatingOk',     s:gui0B, s:gui01, s:cterm0B, s:cterm01, '', '')
-                                         
+
 call <sid>hi('DiagnosticDeprecated',     '', '', '', '', 'strikethrough', '')
 hi! link DiagnosticUnnecessary Comment
 
@@ -670,6 +673,7 @@ call <sid>hi('GitChangeDeleteSign', s:gui04, '', s:cterm04, '', '', '')
 call <sid>hi('GitSignsDeleteVirtLn',       s:gui12, s:gui01, s:cterm12, s:cterm01, '', '')
 call <sid>hi('GitSignsDeleteVirtLnInLine', s:gui01, s:gui12, s:cterm12, s:cterm01, '', '')
 call <sid>hi('GitSignsDeleteInline',       s:gui01, s:gui12, s:cterm01, s:cterm12, '', '')
+call <sid>hi('GitSignsAddInline',       s:gui14, s:gui12, s:cterm14, s:cterm12, '', '')
 
 " HTML
 call <sid>hi('htmlBold',   s:gui05, '', s:cterm0A, '', 'bold', '')
@@ -758,10 +762,10 @@ hi! link ClapCurrentSelection  CursorLine
 hi! link ClapNoMatchesFound    ErrorFloat
 
 " Coc
-hi! link CocErrorSign         DiagnosticError 
-hi! link CocWarningSign       DiagnosticWarn  
-hi! link CocInfoSign          DiagnosticInfo  
-hi! link CocHintSign          DiagnosticHint  
+hi! link CocErrorSign         DiagnosticError
+hi! link CocWarningSign       DiagnosticWarn
+hi! link CocInfoSign          DiagnosticInfo
+hi! link CocHintSign          DiagnosticHint
 
 hi! link CocErrorFloat        DiagnosticFloatingError
 hi! link CocWarningFloat      DiagnosticFloatingWarn

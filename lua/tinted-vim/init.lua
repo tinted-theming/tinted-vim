@@ -1,6 +1,6 @@
 -- Add custom highlights for list in `:h highlight-groups`.
 local function highlight_groups(patterns)
-    local ns = vim.api.nvim_create_namespace('vimhelp')
+    local ns = vim.api.nvim_create_namespace('tinted-vim-help')
 
     local save_cursor = vim.fn.getcurpos()
 
@@ -27,6 +27,11 @@ vim.api.nvim_create_autocmd("BufEnter", {
     callback = function()
         vim.treesitter.start(0, 'vimdoc')
         highlight_groups({
+            {
+                start = [[INTRODUCTION]],
+                stop = '^======',
+                match = '^g:(%w+_%w+)'
+            },
             { start = [[GUI HIGHLIGHTS]],                 stop = '^======', match = '^(%w+)\t' },
             { start = [[DEFAULT SYNTAX HIGHLIGHTS]],      stop = '^======', match = '^(%w+)\t' },
             { start = [[TREESITTER SYNTAX HIGHLIGHTS]],   stop = '^======', match = '^@[%w%p]+', },

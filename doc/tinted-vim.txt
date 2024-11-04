@@ -21,12 +21,42 @@ A comprehensive guide to Neovim highlight groups
        Vimscript............................... |tinted-vim-lang-vimscript|
 
 ==============================================================================
-1. INTRODUCTION                                      *tinted-vim-introduction*
+1. INTRODUCTION                  *tinted-vim-introduction* *tinted-vim-colors*
 
 This document provides a comprehensive reference for all highlight groups in
 Neovim. It includes GUI highlights, syntax highlights, Treesitter highlights,
 LSP highlights, and diagnostic highlights. Each section contains detailed
 descriptions of the highlight groups and their intended usage.
+
+Colors Overview:
+
+|https://github.com/tinted-theming/base24/blob/main/styling.md|
+
+Vim Variable	BaseNN  Ansi  Terminal/Color	Text Editor
+g:tinted_gui00  base00  -     Background        Default Background
+g:tinted_gui01  base01  0     Black             Lighter Background (Status bars)
+g:tinted_gui02  base02  8     Bright Black      Selection Background
+g:tinted_gui03  base03  -     (Grey)            Comments, Invisibles, Line Highlighting
+g:tinted_gui04  base04  -     (Light Grey)      Dark Foreground (Status bars)
+g:tinted_gui05  base05  -     Foreground        Default, Caret, Delimiters, Operators
+g:tinted_gui06  base06  7     White             Light Foreground (Not often used)
+g:tinted_gui07  base07  15    Bright White      Lightest Foreground (Not often used)
+g:tinted_gui08  base08  9     Bright Red        Variables, XML Tags, Markup Links, Lists
+g:tinted_gui09  base09  ~11   (Orange)          Integers, Boolean, XML Attributes
+g:tinted_gui0A  base0A  11    Bright Yellow     Classes, Markup Bold, Search Background
+g:tinted_gui0B  base0B  10    Bright Green      Strings, Inherited Class, Markup Code
+g:tinted_gui0C  base0C  14    Bright Cyan       Support, RegEx, Escape Chars, Quotes
+g:tinted_gui0D  base0D  12    Bright Blue       Functions, Methods, IDs, Headings
+g:tinted_gui0E  base0E  13    Bright Purple     Keywords, Storage, Selector, Markup
+g:tinted_gui0F  base0F  -     (Dark Red)        Deprecated Methods and Functions
+g:tinted_gui10  base10  -     (Darker Black)    Darker Background
+g:tinted_gui11  base11  -     (Darkest Black)   The Darkest Background
+g:tinted_gui12  base12  1     Red               NA
+g:tinted_gui13  base13  3     Yellow            NA
+g:tinted_gui14  base14  2     Green             NA
+g:tinted_gui15  base15  6     Cyan              NA
+g:tinted_gui16  base16  4     Blue              NA
+g:tinted_gui17  base17  5     Purple            NA
 
 ==============================================================================
 2. GUI HIGHLIGHTS                                             *tinted-vim-gui*

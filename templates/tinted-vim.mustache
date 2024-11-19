@@ -274,8 +274,8 @@ call <sid>hi('CurSearch',     s:gui00, s:gui14, s:cterm00, s:cterm14,  '', '')
 call <sid>hi('Cursor',        'bg', 'fg', '', '', '', '')
 hi! link lCursor Cursor
 hi! link CursorIM Cursor
-call <sid>hi('CursorColumn',  '', s:gui01, '', s:cterm01, 'none', 'none')
-call <sid>hi('CursorLine',    '', s:gui01, '', s:cterm01, 'none', 'none')
+call <sid>hi('CursorColumn',  '', s:gui01, '', s:cterm01, 'none', '')
+call <sid>hi('CursorLine',    '', s:gui01, '', s:cterm01, 'none', '')
 call <sid>hi('Directory',     s:gui0D, '', s:cterm0D, '', '', '')
 
 " Diff
@@ -298,7 +298,7 @@ hi! link LineNrBelow LineNr
 call <sid>hi('CursorLineNr',   s:gui04, s:guibg, s:cterm04, s:ctermbg, 'bold', '')
 call <sid>hi('CursorLineFold', s:gui13, s:guibg, s:cterm13, s:ctermbg, '', '')
 hi! link CursorLineSign SignColumn
-call <sid>hi('MatchParen',     '', '', '', '',  'inverse', 'underline')
+call <sid>hi('MatchParen',     '', '', '', '',  'inverse', '')
 call <sid>hi('ModeMsg',        s:gui05, '', s:cterm05, '', '', '')
 hi! link MsgArea None
 hi! link MsgSeparator WinSeparator

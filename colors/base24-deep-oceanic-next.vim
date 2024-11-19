@@ -119,6 +119,7 @@ if exists("tinted_colorspace") && tinted_colorspace == "256"
   let s:cterm17        = "13"
   let g:base24_cterm17 = "13"
 else
+<<<<<<< HEAD
   let s:cterm01        = "10"
   let g:base24_cterm01 = "10"
   let s:cterm02        = "11"
@@ -131,6 +132,36 @@ else
   let g:base24_cterm09 = "09"
   let s:cterm0F        = "14"
   let g:base24_cterm0F = "14"
+=======
+  let s:cterm01        = '10'
+  let g:tinted_cterm01 = '10'
+  let s:cterm02        = '11'
+  let g:tinted_cterm02 = '11'
+  let s:cterm04        = '12'
+  let g:tinted_cterm04 = '12'
+  let s:cterm06        = '13'
+  let g:tinted_cterm06 = '13'
+  let s:cterm09        = '09'
+  let g:tinted_cterm09 = '09'
+  let s:cterm0F        = '14'
+  let g:tinted_cterm0F = '14'
+  let s:cterm10        = s:cterm00
+  let g:tinted_cterm10 = s:cterm00
+  let s:cterm11        = s:cterm00
+  let g:tinted_cterm11 = s:cterm00
+  let s:cterm12        = s:cterm08
+  let g:tinted_cterm12 = s:cterm08
+  let s:cterm13        = s:cterm0A
+  let g:tinted_cterm13 = s:cterm0A
+  let s:cterm14        = s:cterm0B
+  let g:tinted_cterm14 = s:cterm0B
+  let s:cterm15        = s:cterm0C
+  let g:tinted_cterm15 = s:cterm0C
+  let s:cterm16        = s:cterm0D
+  let g:tinted_cterm16 = s:cterm0D
+  let s:cterm17        = s:cterm0E
+  let g:tinted_cterm17 = s:cterm0E
+>>>>>>> 7ea6678 (chore(colors): Update)
 endif
 
 " Neovim terminal colours
@@ -236,6 +267,7 @@ fun <sid>hi(group, guifg, guibg, ctermfg, ctermbg, attr, guisp)
   call g:Base24hi(a:group, a:guifg, a:guibg, a:ctermfg, a:ctermbg, a:attr, a:guisp)
 endfun
 
+<<<<<<< HEAD
 " Vim editor colors
 call <sid>hi("Normal",        s:gui05, s:guibg, s:cterm05, s:ctermbg, "", "")
 call <sid>hi("Bold",          "", "", "", "", "bold", "")
@@ -284,6 +316,126 @@ call <sid>hi("PMenuThumb",    "", s:gui04, "", s:cterm04, "", "")
 call <sid>hi("TabLine",       s:gui03, s:gui01, s:cterm03, s:cterm01, "none", "")
 call <sid>hi("TabLineFill",   s:gui03, s:gui01, s:cterm03, s:cterm01, "none", "")
 call <sid>hi("TabLineSel",    s:gui0B, s:gui01, s:cterm0B, s:cterm01, "none", "")
+=======
+
+" Tinted color highlights
+
+call <sid>hi('tinted_gui00', g:tinted_gui00, '', '', '', '', '')
+call <sid>hi('tinted_gui01', g:tinted_gui01, '', '', '', '', '')
+call <sid>hi('tinted_gui02', g:tinted_gui02, '', '', '', '', '')
+call <sid>hi('tinted_gui03', g:tinted_gui03, '', '', '', '', '')
+call <sid>hi('tinted_gui04', g:tinted_gui04, '', '', '', '', '')
+call <sid>hi('tinted_gui05', g:tinted_gui05, '', '', '', '', '')
+call <sid>hi('tinted_gui06', g:tinted_gui06, '', '', '', '', '')
+call <sid>hi('tinted_gui07', g:tinted_gui07, '', '', '', '', '')
+call <sid>hi('tinted_gui08', g:tinted_gui08, '', '', '', '', '')
+call <sid>hi('tinted_gui09', g:tinted_gui09, '', '', '', '', '')
+call <sid>hi('tinted_gui0A', g:tinted_gui0A, '', '', '', '', '')
+call <sid>hi('tinted_gui0B', g:tinted_gui0B, '', '', '', '', '')
+call <sid>hi('tinted_gui0C', g:tinted_gui0C, '', '', '', '', '')
+call <sid>hi('tinted_gui0D', g:tinted_gui0D, '', '', '', '', '')
+call <sid>hi('tinted_gui0E', g:tinted_gui0E, '', '', '', '', '')
+call <sid>hi('tinted_gui0F', g:tinted_gui0F, '', '', '', '', '')
+call <sid>hi('tinted_gui10', g:tinted_gui10, '', '', '', '', '')
+call <sid>hi('tinted_gui11', g:tinted_gui11, '', '', '', '', '')
+call <sid>hi('tinted_gui12', g:tinted_gui12, '', '', '', '', '')
+call <sid>hi('tinted_gui13', g:tinted_gui13, '', '', '', '', '')
+call <sid>hi('tinted_gui14', g:tinted_gui14, '', '', '', '', '')
+call <sid>hi('tinted_gui15', g:tinted_gui15, '', '', '', '', '')
+call <sid>hi('tinted_gui16', g:tinted_gui16, '', '', '', '', '')
+call <sid>hi('tinted_gui17', g:tinted_gui17, '', '', '', '', '')
+
+
+" Vim editor colors
+
+call <sid>hi('ColorColumn',   '', s:gui01, '', s:cterm01, '', '')
+hi! clear Conceal
+call <sid>hi('Conceal',       s:gui0D, '', s:cterm0D, '', '', '')
+call <sid>hi('CurSearch',     s:gui00, s:gui14, s:cterm00, s:cterm14,  '', '')
+call <sid>hi('Cursor',        'bg', 'fg', '', '', '', '')
+hi! link lCursor Cursor
+hi! link CursorIM Cursor
+call <sid>hi('CursorColumn',  '', s:gui01, '', s:cterm01, 'none', '')
+call <sid>hi('CursorLine',    '', s:gui01, '', s:cterm01, 'none', '')
+call <sid>hi('Directory',     s:gui0D, '', s:cterm0D, '', '', '')
+
+" Diff
+call <sid>hi('DiffAdd',       s:gui14, s:gui01,  s:cterm14, s:cterm01, '', '')
+call <sid>hi('DiffChange',    s:gui04, s:gui01,  s:cterm04, s:cterm01, '', '')
+call <sid>hi('DiffDelete',    s:gui02, s:guibg,  s:cterm02, s:ctermbg, '', '')
+call <sid>hi('DiffText',      s:gui16, s:gui01,  s:cterm16, s:cterm01, '', '')
+
+call <sid>hi('EndOfBuffer',   s:guibg, s:guibg, s:ctermbg, s:ctermbg, '', '')
+call <sid>hi('ErrorMsg',      s:gui08, '', s:cterm08, '', '', '')
+call <sid>hi('WinSeparator',  s:gui01, s:guibg, s:cterm01, s:ctermbg, '', '')
+call <sid>hi('Folded',        s:gui13, s:guibg, s:cterm13, s:ctermbg, '', '')
+call <sid>hi('FoldColumn',    s:gui03, s:guibg, s:cterm03, s:ctermbg, '', '')
+call <sid>hi('SignColumn',    s:gui03, s:guibg, s:cterm03, s:ctermbg, '', '')
+hi! link IncSearch CurSearch
+hi! link Substitute Search
+call <sid>hi('LineNr',        s:gui03, s:guibg, s:cterm03, s:ctermbg, '', '')
+hi! link LineNrAbove LineNr
+hi! link LineNrBelow LineNr
+call <sid>hi('CursorLineNr',   s:gui04, s:guibg, s:cterm04, s:ctermbg, 'bold', '')
+call <sid>hi('CursorLineFold', s:gui13, s:guibg, s:cterm13, s:ctermbg, '', '')
+hi! link CursorLineSign SignColumn
+call <sid>hi('MatchParen',     '', '', '', '',  'inverse', '')
+call <sid>hi('ModeMsg',        s:gui05, '', s:cterm05, '', '', '')
+hi! link MsgArea None
+hi! link MsgSeparator WinSeparator
+call <sid>hi('MoreMsg',        s:gui0B, '', s:cterm0B, '', '', '')
+call <sid>hi('NonText',        s:gui03, '', s:cterm03, '', '', '')
+call <sid>hi('Normal',         s:gui05, s:guibg, s:cterm05, s:ctermbg, '', '')
+call <sid>hi('NormalFloat',    s:gui06, s:gui01, s:cterm06, s:cterm01, 'none', '')
+call <sid>hi('FloatBorder',    s:gui06, s:gui01, s:cterm06, s:cterm01, 'none', '')
+hi! link FloatTitle Title
+hi! link FloatFooter FloatTitle
+hi! link NormalNC None
+call <sid>hi('PMenu',           s:gui05, s:gui01, s:cterm05, s:cterm01, 'none', '')
+call <sid>hi('PMenuSel', s:gui06, s:gui02, s:cterm06, s:cterm02, 'none', '')
+hi! link PMenuKind PMenu
+hi! link PMenuKindSel PMenuSel
+hi! link PMenuExtra PMenu
+hi! link PMenuExtraSel PMenuSel
+call <sid>hi('PMenuSbar',      '', s:gui03, '', s:cterm03, '', '')
+call <sid>hi('PMenuThumb',     '', s:gui04, '', s:cterm04, '', '')
+call <sid>hi('PMenuMatch',     s:gui0C, '','', s:cterm0C, '', '')
+call <sid>hi('PMenuMatchSel',  s:gui15, s:gui02, s:cterm15, s:cterm02, 'none', '')
+call <sid>hi('Question',       s:gui0D, '', s:cterm0D, '', '', '')
+call <sid>hi('QuickFixLine',   '', s:gui01, '', s:cterm01, 'none', '')
+call <sid>hi('Search',         s:gui01, s:gui13, s:cterm01, s:cterm13,  '', '')
+hi! link SnippetTabstop Visual
+call <sid>hi('SpecialKey',     s:gui03, '', s:cterm03, '', '', '')
+
+" Spell
+call <sid>hi('SpellBad',       '', '', s:ctermbg, s:cterm12, 'undercurl', s:gui08)
+call <sid>hi('SpellLocal',     '', '', s:ctermbg, s:cterm15, 'undercurl', s:gui15)
+call <sid>hi('SpellCap',       '', '', s:ctermbg, s:cterm16, 'undercurl', s:gui16)
+call <sid>hi('SpellRare',      '', '', s:ctermbg, s:cterm0E, 'undercurl', s:gui0E)
+
+call <sid>hi('StatusLine',     s:gui04, s:gui01, s:cterm04, s:cterm01, 'none', '')
+call <sid>hi('StatusLineNC',   s:gui03, s:gui01, s:cterm03, s:cterm01, 'none', '')
+hi! link StatusLineTerm StatusLine
+hi! link StatusLineTermNC StatusLineNC
+hi! link TabLine StatusLine
+call <sid>hi('TabLineSel',     s:gui01, s:gui04, s:cterm01, s:cterm04, 'none', '')
+hi! link TabLineFill StatusLine
+
+call <sid>hi('Title',          s:gui0D, '', s:cterm0D, '', '', '')
+call <sid>hi('Visual',         '', s:gui02, '', s:cterm02, '', '')
+hi! link VisualNOS Visual
+call <sid>hi('WarningMsg',     s:gui09, '', s:cterm09, '', '', '')
+call <sid>hi('Whitespace',     s:gui03, '', s:cterm03, '', '', '')
+call <sid>hi('WildMenu',       s:guibg, s:gui05, s:ctermbg, s:cterm05, '', '')
+hi! link WinBar StatusLine
+hi! link WinBarNC StatusLineNC
+
+
+" call <sid>hi('Menu',          s:guibg, s:gui05, s:ctermbg, s:cterm05, '', '")
+" call <sid>hi('Scrollbar',     s:guibg, s:gui05, s:ctermbg, s:cterm05, '', '")
+" call <sid>hi('Tooltip',       s:guibg, s:gui05, s:ctermbg, s:cterm05, '', '")
+
+>>>>>>> 7ea6678 (chore(colors): Update)
 
 " Standard syntax
 call <sid>hi("Boolean",      s:gui09, "", s:cterm09, "", "", "")

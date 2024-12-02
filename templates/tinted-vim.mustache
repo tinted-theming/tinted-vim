@@ -15,183 +15,110 @@ if !has('gui_running')
   endif
 endif
 
-" GUI color definitions
+" GUI colors
 let s:gui00        = '{{base00-hex}}'
-let g:tinted_gui00 = '{{base00-hex}}'
 let s:gui01        = '{{base01-hex}}'
-let g:tinted_gui01 = '{{base01-hex}}'
 let s:gui02        = '{{base02-hex}}'
-let g:tinted_gui02 = '{{base02-hex}}'
 let s:gui03        = '{{base03-hex}}'
-let g:tinted_gui03 = '{{base03-hex}}'
 let s:gui04        = '{{base04-hex}}'
-let g:tinted_gui04 = '{{base04-hex}}'
 let s:gui05        = '{{base05-hex}}'
-let g:tinted_gui05 = '{{base05-hex}}'
 let s:gui06        = '{{base06-hex}}'
-let g:tinted_gui06 = '{{base06-hex}}'
 let s:gui07        = '{{base07-hex}}'
-let g:tinted_gui07 = '{{base07-hex}}'
 let s:gui08        = '{{base08-hex}}'
-let g:tinted_gui08 = '{{base08-hex}}'
 let s:gui09        = '{{base09-hex}}'
-let g:tinted_gui09 = '{{base09-hex}}'
 let s:gui0A        = '{{base0A-hex}}'
-let g:tinted_gui0A = '{{base0A-hex}}'
 let s:gui0B        = '{{base0B-hex}}'
-let g:tinted_gui0B = '{{base0B-hex}}'
 let s:gui0C        = '{{base0C-hex}}'
-let g:tinted_gui0C = '{{base0C-hex}}'
 let s:gui0D        = '{{base0D-hex}}'
-let g:tinted_gui0D = '{{base0D-hex}}'
 let s:gui0E        = '{{base0E-hex}}'
-let g:tinted_gui0E = '{{base0E-hex}}'
 let s:gui0F        = '{{base0F-hex}}'
-let g:tinted_gui0F = '{{base0F-hex}}'
 let s:gui10        = '{{base10-hex}}{{^base10-hex}}{{base00-hex}}{{/base10-hex}}'
-let g:tinted_gui10 = '{{base10-hex}}{{^base10-hex}}{{base00-hex}}{{/base10-hex}}'
 let s:gui11        = '{{base11-hex}}{{^base11-hex}}{{base00-hex}}{{/base11-hex}}'
-let g:tinted_gui11 = '{{base11-hex}}{{^base11-hex}}{{base00-hex}}{{/base11-hex}}'
 let s:gui12        = '{{base12-hex}}{{^base12-hex}}{{base08-hex}}{{/base12-hex}}'
-let g:tinted_gui12 = '{{base12-hex}}{{^base12-hex}}{{base08-hex}}{{/base12-hex}}'
 let s:gui13        = '{{base13-hex}}{{^base13-hex}}{{base0A-hex}}{{/base13-hex}}'
-let g:tinted_gui13 = '{{base13-hex}}{{^base13-hex}}{{base0A-hex}}{{/base13-hex}}'
 let s:gui14        = '{{base14-hex}}{{^base14-hex}}{{base0B-hex}}{{/base14-hex}}'
-let g:tinted_gui14 = '{{base14-hex}}{{^base14-hex}}{{base0B-hex}}{{/base14-hex}}'
 let s:gui15        = '{{base15-hex}}{{^base15-hex}}{{base0C-hex}}{{/base15-hex}}'
-let g:tinted_gui15 = '{{base15-hex}}{{^base15-hex}}{{base0C-hex}}{{/base15-hex}}'
 let s:gui16        = '{{base16-hex}}{{^base16-hex}}{{base0D-hex}}{{/base16-hex}}'
-let g:tinted_gui16 = '{{base16-hex}}{{^base16-hex}}{{base0D-hex}}{{/base16-hex}}'
 let s:gui17        = '{{base17-hex}}{{^base17-hex}}{{base0E-hex}}{{/base17-hex}}'
-let g:tinted_gui17 = '{{base17-hex}}{{^base17-hex}}{{base0E-hex}}{{/base17-hex}}'
 
-" Terminal color definitions
-let s:cterm00        = '00'
-let g:tinted_cterm00 = '00'
-let s:cterm03        = '09'
-let g:tinted_cterm03 = '09'
-let s:cterm05        = '07'
-let g:tinted_cterm05 = '07'
-let s:cterm07        = '15'
-let g:tinted_cterm07 = '15'
-let s:cterm08        = '01'
-let g:tinted_cterm08 = '01'
-let s:cterm0A        = '03'
-let g:tinted_cterm0A = '03'
-let s:cterm0B        = '02'
-let g:tinted_cterm0B = '02'
-let s:cterm0C        = '06'
-let g:tinted_cterm0C = '06'
-let s:cterm0D        = '04'
-let g:tinted_cterm0D = '04'
-let s:cterm0E        = '05'
-let g:tinted_cterm0E = '05'
+" Terminal colors
+let s:cterm00  = '00'
+let s:cterm01  = '18'
+let s:cterm02  = '19'
+let s:cterm03  = '08'
+let s:cterm04  = '20'
+let s:cterm05  = '21'
+let s:cterm06  = '07'
+let s:cterm07  = '15'
+let s:cterm08  = '01'
+let s:cterm09  = '16'
+let s:cterm0A  = '03'
+let s:cterm0B  = '02'
+let s:cterm0C  = '06'
+let s:cterm0D  = '04'
+let s:cterm0E  = '05'
+let s:cterm0F  = '17'
+let s:cterm10  = s:cterm00
+let s:cterm11  = s:cterm00
+let s:cterm12  = '{{#base12-hex}}09{{/base12-hex}}{{^base12-hex}}01{{/base12-hex}}'
+let s:cterm13  = '{{#base13-hex}}11{{/base13-hex}}{{^base13-hex}}03{{/base13-hex}}'
+let s:cterm14  = '{{#base14-hex}}10{{/base14-hex}}{{^base14-hex}}02{{/base14-hex}}'
+let s:cterm15  = '{{#base15-hex}}14{{/base15-hex}}{{^base15-hex}}06{{/base15-hex}}'
+let s:cterm16  = '{{#base16-hex}}12{{/base16-hex}}{{^base16-hex}}04{{/base16-hex}}'
+let s:cterm17  = '{{#base17-hex}}13{{/base17-hex}}{{^base17-hex}}05{{/base17-hex}}'
 
-" `base16_colorspace` and `base16colorspace` are legacy properties and
+" base16_colorspace` and `base16colorspace` are legacy properties and
 " exist to keep existing setups from breaking
-if (exists('base16_colorspace') && base16_colorspace ==? '256') || (exists('tinted_colorspace') && tinted_colorspace ==? '256')
-  let s:cterm01        = '18'
-  let g:tinted_cterm01 = '18'
-  let s:cterm02        = '19'
-  let g:tinted_cterm02 = '19'
-  let s:cterm04        = '20'
-  let g:tinted_cterm04 = '20'
-  let s:cterm06        = '21'
-  let g:tinted_cterm06 = '21'
-  let s:cterm09        = '16'
-  let g:tinted_cterm09 = '16'
-  let s:cterm0F        = '17'
-  let g:tinted_cterm0F = '17'
-  let s:cterm10        = '13'
-  let g:tinted_cterm10 = '13'
-  let s:cterm11        = '13'
-  let g:tinted_cterm11 = '13'
-  let s:cterm12        = '09'
-  let g:tinted_cterm12 = '09'
-  let s:cterm13        = '11'
-  let g:tinted_cterm13 = '11'
-  let s:cterm14        = '10'
-  let g:tinted_cterm14 = '10'
-  let s:cterm15        = '14'
-  let g:tinted_cterm15 = '14'
-  let s:cterm16        = '12'
-  let g:tinted_cterm16 = '12'
-  let s:cterm17        = '13'
-  let g:tinted_cterm17 = '13'
-else
-  let s:cterm01        = '10'
-  let g:tinted_cterm01 = '10'
-  let s:cterm02        = '11'
-  let g:tinted_cterm02 = '11'
-  let s:cterm04        = '12'
-  let g:tinted_cterm04 = '12'
-  let s:cterm06        = '13'
-  let g:tinted_cterm06 = '13'
-  let s:cterm09        = '09'
-  let g:tinted_cterm09 = '09'
-  let s:cterm0F        = '14'
-  let g:tinted_cterm0F = '14'
-  let s:cterm10        = s:cterm00
-  let g:tinted_cterm10 = s:cterm00
-  let s:cterm11        = s:cterm00
-  let g:tinted_cterm11 = s:cterm00
-  let s:cterm12        = s:cterm08
-  let g:tinted_cterm12 = s:cterm08
-  let s:cterm13        = s:cterm0A
-  let g:tinted_cterm13 = s:cterm0A
-  let s:cterm14        = s:cterm0B
-  let g:tinted_cterm14 = s:cterm0B
-  let s:cterm15        = s:cterm0C
-  let g:tinted_cterm15 = s:cterm0C
-  let s:cterm16        = s:cterm0D
-  let g:tinted_cterm16 = s:cterm0D
-  let s:cterm17        = s:cterm0E
-  let g:tinted_cterm17 = s:cterm0E
+if (exists('base16_colorspace') && base16_colorspace !=? '256') || (exists('tinted_colorspace') && tinted_colorspace !=? '256')
+  " We have only 16 colors so define fallbacks for codes > 15
+  let s:cterm01 = s:cterm00
+  let s:cterm02 = s:cterm03
+  let s:cterm04 = s:cterm03
+  let s:cterm05 = s:cterm06
+  let s:cterm07 = s:cterm06
+  let s:cterm09 = s:cterm08
+  let s:cterm0F = s:cterm08
 endif
 
-" Neovim terminal colours
+" Todo! why do we need the globals?
+function! s:create_color_globals() abort
+  for i in range(0, 23)
+    let l:num = printf('%02X', i)
+    execute 'let g:tinted_gui' . l:num . ' = s:gui' . l:num
+    execute 'let g:tinted_cterm' . l:num . ' = s:cterm' . l:num
+  endfor
+endfunction
+
+call s:create_color_globals()
+
+" Integrated Terminal colors
+let s:colors = [
+  \ '#{{base00-hex}}',
+  \ '#{{base08-hex}}',
+  \ '#{{base0B-hex}}',
+  \ '#{{base0A-hex}}',
+  \ '#{{base0D-hex}}',
+  \ '#{{base0E-hex}}',
+  \ '#{{base0C-hex}}',
+  \ '#{{base05-hex}}',
+  \ '#{{base03-hex}}',
+  \ '#{{base12-hex}}{{^base12-hex}}{{base08-hex}}{{/base12-hex}}',
+  \ '#{{base14-hex}}{{^base14-hex}}{{base0B-hex}}{{/base14-hex}}',
+  \ '#{{base13-hex}}{{^base13-hex}}{{base0A-hex}}{{/base13-hex}}',
+  \ '#{{base16-hex}}{{^base16-hex}}{{base0D-hex}}{{/base16-hex}}',
+  \ '#{{base17-hex}}{{^base17-hex}}{{base0E-hex}}{{/base17-hex}}',
+  \ '#{{base15-hex}}{{^base15-hex}}{{base0C-hex}}{{/base15-hex}}',
+  \ '#{{base07-hex}}'
+\]
+
 if has('nvim')
-  let g:terminal_color_0  = '#{{base00-hex}}'
-  let g:terminal_color_1  = '#{{base08-hex}}'
-  let g:terminal_color_2  = '#{{base0B-hex}}'
-  let g:terminal_color_3  = '#{{base0A-hex}}'
-  let g:terminal_color_4  = '#{{base0D-hex}}'
-  let g:terminal_color_5  = '#{{base0E-hex}}'
-  let g:terminal_color_6  = '#{{base0C-hex}}'
-  let g:terminal_color_7  = '#{{base05-hex}}'
-  let g:terminal_color_8  = '#{{base03-hex}}'
-  let g:terminal_color_9  = '#{{base12-hex}}{{^base12-hex}}{{base08-hex}}{{/base12-hex}}'
-  let g:terminal_color_10 = '#{{base14-hex}}{{^base14-hex}}{{base0B-hex}}{{/base14-hex}}'
-  let g:terminal_color_11 = '#{{base13-hex}}{{^base13-hex}}{{base0A-hex}}{{/base13-hex}}'
-  let g:terminal_color_12 = '#{{base16-hex}}{{^base16-hex}}{{base0D-hex}}{{/base16-hex}}'
-  let g:terminal_color_13 = '#{{base17-hex}}{{^base17-hex}}{{base0E-hex}}{{/base17-hex}}'
-  let g:terminal_color_14 = '#{{base15-hex}}{{^base15-hex}}{{base0C-hex}}{{/base15-hex}}'
-  let g:terminal_color_15 = '#{{base07-hex}}'
-  let g:terminal_color_background = g:terminal_color_0
-  let g:terminal_color_foreground = g:terminal_color_5
-  if &background ==? 'light'
-    let g:terminal_color_background = g:terminal_color_7
-    let g:terminal_color_foreground = g:terminal_color_2
-  endif
+  for i in range(16)
+    let g:terminal_color_{i} = s:colors[i]
+  endfor
+  let g:terminal_color_background = &background ==? 'light' ? s:colors[7] : s:colors[0]
+  let g:terminal_color_foreground = &background ==? 'light' ? s:colors[2] : s:colors[5]
 elseif has('terminal')
-  let g:terminal_ansi_colors = [
-        \ '#{{base00-hex}}',
-        \ '#{{base08-hex}}',
-        \ '#{{base0B-hex}}',
-        \ '#{{base09-hex}}',
-        \ '#{{base0D-hex}}',
-        \ '#{{base0E-hex}}',
-        \ '#{{base0C-hex}}',
-        \ '#{{base06-hex}}',
-        \ '#{{base02-hex}}',
-        \ '#{{base12-hex}}{{^base12-hex}}{{base08-hex}}{{/base12-hex}}',
-        \ '#{{base14-hex}}{{^base14-hex}}{{base0B-hex}}{{/base14-hex}}',
-        \ '#{{base13-hex}}{{^base13-hex}}{{base0A-hex}}{{/base13-hex}}',
-        \ '#{{base16-hex}}{{^base16-hex}}{{base0D-hex}}{{/base16-hex}}',
-        \ '#{{base17-hex}}{{^base17-hex}}{{base0E-hex}}{{/base17-hex}}',
-        \ '#{{base15-hex}}{{^base15-hex}}{{base0C-hex}}{{/base15-hex}}',
-        \ '#{{base07-hex}}',
-        \ ]
+  let g:terminal_ansi_colors = s:colors
 endif
 
 if exists('g:tinted_background_transparent') && g:tinted_background_transparent ==? '1'
@@ -202,15 +129,16 @@ else
   let s:ctermbg = s:cterm00
 endif
 
-
 " Theme setup
-hi clear
-syntax reset
 let g:colors_name = 'base24-{{scheme-slug}}'
 
 " Highlighting function
 " Optional variables are attributes and guisp
 function! g:Tinted_Hi(group, guifg, guibg, ctermfg, ctermbg, ...)
+
+  " Clear the highlight to be more robust against default Highlighting changes
+  exec 'hi! clear ' . a:group
+
   let l:attr = get(a:, 1, '')
   let l:guisp = get(a:, 2, '')
 
@@ -256,30 +184,31 @@ endfun
 
 
 " Tinted color highlights
-call <sid>hi('tinted_gui00', g:tinted_gui00, '', '', '', '', '')
-call <sid>hi('tinted_gui01', g:tinted_gui01, '', '', '', '', '')
-call <sid>hi('tinted_gui02', g:tinted_gui02, '', '', '', '', '')
-call <sid>hi('tinted_gui03', g:tinted_gui03, '', '', '', '', '')
-call <sid>hi('tinted_gui04', g:tinted_gui04, '', '', '', '', '')
-call <sid>hi('tinted_gui05', g:tinted_gui05, '', '', '', '', '')
-call <sid>hi('tinted_gui06', g:tinted_gui06, '', '', '', '', '')
-call <sid>hi('tinted_gui07', g:tinted_gui07, '', '', '', '', '')
-call <sid>hi('tinted_gui08', g:tinted_gui08, '', '', '', '', '')
-call <sid>hi('tinted_gui09', g:tinted_gui09, '', '', '', '', '')
-call <sid>hi('tinted_gui0A', g:tinted_gui0A, '', '', '', '', '')
-call <sid>hi('tinted_gui0B', g:tinted_gui0B, '', '', '', '', '')
-call <sid>hi('tinted_gui0C', g:tinted_gui0C, '', '', '', '', '')
-call <sid>hi('tinted_gui0D', g:tinted_gui0D, '', '', '', '', '')
-call <sid>hi('tinted_gui0E', g:tinted_gui0E, '', '', '', '', '')
-call <sid>hi('tinted_gui0F', g:tinted_gui0F, '', '', '', '', '')
-call <sid>hi('tinted_gui10', g:tinted_gui10, '', '', '', '', '')
-call <sid>hi('tinted_gui11', g:tinted_gui11, '', '', '', '', '')
-call <sid>hi('tinted_gui12', g:tinted_gui12, '', '', '', '', '')
-call <sid>hi('tinted_gui13', g:tinted_gui13, '', '', '', '', '')
-call <sid>hi('tinted_gui14', g:tinted_gui14, '', '', '', '', '')
-call <sid>hi('tinted_gui15', g:tinted_gui15, '', '', '', '', '')
-call <sid>hi('tinted_gui16', g:tinted_gui16, '', '', '', '', '')
-call <sid>hi('tinted_gui17', g:tinted_gui17, '', '', '', '', '')
+
+call <sid>hi('tinted_gui00', s:gui00, '', s:cterm00, '', '', '')
+call <sid>hi('tinted_gui01', s:gui01, '', s:cterm01, '', '', '')
+call <sid>hi('tinted_gui02', s:gui02, '', s:cterm02, '', '', '')
+call <sid>hi('tinted_gui03', s:gui03, '', s:cterm03, '', '', '')
+call <sid>hi('tinted_gui04', s:gui04, '', s:cterm04, '', '', '')
+call <sid>hi('tinted_gui05', s:gui05, '', s:cterm05, '', '', '')
+call <sid>hi('tinted_gui06', s:gui06, '', s:cterm06, '', '', '')
+call <sid>hi('tinted_gui07', s:gui07, '', s:cterm07, '', '', '')
+call <sid>hi('tinted_gui08', s:gui08, '', s:cterm08, '', '', '')
+call <sid>hi('tinted_gui09', s:gui09, '', s:cterm09, '', '', '')
+call <sid>hi('tinted_gui0A', s:gui0A, '', s:cterm0A, '', '', '')
+call <sid>hi('tinted_gui0B', s:gui0B, '', s:cterm0B, '', '', '')
+call <sid>hi('tinted_gui0C', s:gui0C, '', s:cterm0C, '', '', '')
+call <sid>hi('tinted_gui0D', s:gui0D, '', s:cterm0D, '', '', '')
+call <sid>hi('tinted_gui0E', s:gui0E, '', s:cterm0E, '', '', '')
+call <sid>hi('tinted_gui0F', s:gui0F, '', s:cterm0F, '', '', '')
+call <sid>hi('tinted_gui10', s:gui10, '', s:cterm10, '', '', '')
+call <sid>hi('tinted_gui11', s:gui11, '', s:cterm11, '', '', '')
+call <sid>hi('tinted_gui12', s:gui12, '', s:cterm12, '', '', '')
+call <sid>hi('tinted_gui13', s:gui13, '', s:cterm13, '', '', '')
+call <sid>hi('tinted_gui14', s:gui14, '', s:cterm14, '', '', '')
+call <sid>hi('tinted_gui15', s:gui15, '', s:cterm15, '', '', '')
+call <sid>hi('tinted_gui16', s:gui16, '', s:cterm16, '', '', '')
+call <sid>hi('tinted_gui17', s:gui17, '', s:cterm17, '', '', '')
 
 
 " Vim editor colors
@@ -302,7 +231,11 @@ call <sid>hi('DiffText',      s:gui16, s:gui01,  s:cterm16, s:cterm01, '', '')
 
 call <sid>hi('EndOfBuffer',   s:guibg, s:guibg, s:ctermbg, s:ctermbg, '', '')
 call <sid>hi('ErrorMsg',      s:gui08, '', s:cterm08, '', '', '')
-call <sid>hi('WinSeparator',  s:gui01, s:guibg, s:cterm01, s:ctermbg, '', '')
+if has('nvim')
+  call <sid>hi('WinSeparator',  s:gui01, s:guibg, s:cterm01, s:ctermbg, '', '')
+else
+  call <sid>hi('VertSplit',  s:gui01, s:guibg, s:cterm01, s:ctermbg, '', '')
+endif
 call <sid>hi('Folded',        s:gui13, s:guibg, s:cterm13, s:ctermbg, '', '')
 call <sid>hi('FoldColumn',    s:gui03, s:guibg, s:cterm03, s:ctermbg, '', '')
 call <sid>hi('SignColumn',    s:gui03, s:guibg, s:cterm03, s:ctermbg, '', '')
@@ -334,7 +267,7 @@ hi! link PMenuExtra PMenu
 hi! link PMenuExtraSel PMenuSel
 call <sid>hi('PMenuSbar',      '', s:gui03, '', s:cterm03, '', '')
 call <sid>hi('PMenuThumb',     '', s:gui04, '', s:cterm04, '', '')
-call <sid>hi('PMenuMatch',     s:gui0C, '','', s:cterm0C, '', '')
+call <sid>hi('PMenuMatch',     s:gui0C, '', s:cterm0C, '', '', '')
 call <sid>hi('PMenuMatchSel',  s:gui15, s:gui02, s:cterm15, s:cterm02, 'none', '')
 call <sid>hi('Question',       s:gui0D, '', s:cterm0D, '', '', '')
 call <sid>hi('QuickFixLine',   '', s:gui01, '', s:cterm01, 'none', '')
@@ -364,7 +297,6 @@ call <sid>hi('Whitespace',     s:gui03, '', s:cterm03, '', '', '')
 call <sid>hi('WildMenu',       s:guibg, s:gui05, s:ctermbg, s:cterm05, '', '')
 hi! link WinBar StatusLine
 hi! link WinBarNC StatusLineNC
-
 
 " call <sid>hi('Menu',          s:guibg, s:gui05, s:ctermbg, s:cterm05, '', '")
 " call <sid>hi('Scrollbar',     s:guibg, s:gui05, s:ctermbg, s:cterm05, '', '")
@@ -426,10 +358,10 @@ call <sid>hi('Added',          s:gui14, '', s:cterm14, '', 'italic', '')
 call <sid>hi('Changed',        s:gui16, '', s:cterm16, '', 'italic', '')
 call <sid>hi('Removed',        s:gui12, '', s:cterm12, '', 'italic', '')
 
+
+" Treesitter Syntax
+
 if has('nvim-0.8.0')
-
-  " Treesitter Syntax
-
   hi! link @variable Identifier
   call <sid>hi('@variable.builtin',           s:gui05, '', s:cterm05, '', 'italic', '')
   hi! link @variable.parameter Identifier
@@ -609,7 +541,6 @@ if has('nvim-0.8.0')
   hi! link LspCodeLensSeparator LspCodeLens
   hi! link LspInlayHint NonText
   hi! link LspSignatureActiveParameter Visual
-
 endif
 
 
@@ -635,6 +566,7 @@ call <sid>hi('DiagnosticFloatingOk',     s:gui0B, s:gui01, s:cterm0B, s:cterm01,
 
 call <sid>hi('DiagnosticDeprecated',     '', '', s:cterm0F, s:cterm0F, 'strikethrough', '')
 hi! link DiagnosticUnnecessary Comment
+
 
 " Syntax Files
 

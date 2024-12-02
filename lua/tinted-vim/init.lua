@@ -1,4 +1,4 @@
--- Add custom highlights for list in `:h highlight-groups`.
+-- Add custom highlights for list in `:h tinted-vim`.
 local function highlight_groups(patterns)
     local ns = vim.api.nvim_create_namespace('tinted-vim-help')
 

@@ -22,23 +22,63 @@ The `onedark` theme:
 ## Usage
 
 1. [Install](#installation) the plugin.
-1. Set a color scheme:
+1. Configuration depends on your environment:
 
-   ```vim
-   :colorscheme base16-ayu-dark
-   ```
+    - **24-bit Terminal or GUI Vim**
 
-1. Check the highlights with:
+        Vimscript:
 
-   ```vim
-   :help tinted-vim
-   ```
+        ```vim
+        set termguicolors  " Only needed for terminal vim
+        colorscheme base16-ayu-dark
+        ```
 
-## Terminal Themes
+        Lua:
 
-For terminal Vim (non-gui) please ensure you are using a terminal theme.
-Have a look at the list of [official] and [unofficial] themes for your
-terminal of choice.
+        ```lua
+        vim.cmd.colorscheme('base16-ayu-dark')
+        ```
+
+    - **256 Color Terminal**
+
+      Configure [tinted-shell]
+
+      Vimscript:
+
+      ```vim
+      let tinted_colorspace=256
+      colorscheme base16-ayu-dark " Set to same theme as your terminal theme
+      ```
+
+      Lua:
+
+      ```lua
+      vim.g.tinted_colorspace = 256
+      vim.cmd.colorscheme('base16-ayu-dark')
+      ```
+
+    - **16 Color Terminal**
+
+      With a 16 color terminal there will be less "gray" colors.
+      Configure terminal with theme from [tinted-shell], [official] or [unofficial].
+
+      Vimscript:
+
+      ```vim
+      colorscheme base16-ayu-dark  " Set to same theme as your terminal theme
+      ```
+
+      Lua:
+
+      ```lua
+      vim.cmd.colorscheme('base16-ayu-dark')
+      ```
+
+1. Check the highlights with (Neovim only):
+
+```vim
+:help tinted-vim
+```
 
 ## Installation
 
@@ -112,7 +152,7 @@ colors every time you do a `git pull` on the `tinted-vim` repo.
 1. Symlink the colors directory:
 
    ```sh
-   ln -s ~/projects/tinted-vim/colors ~/.vim/colors
+   ln -s ~/projects/tinted-vim/colors/* ~/.vim/colors
    # Or for Neovim
    # ln -s ~/projects/tinted-vim/colors ~/.config/nvim/colors
    ```
@@ -135,53 +175,22 @@ git clone git://github.com/tinted-theming/tinted-vim.git tinted-vim
 cp tinted-vim/colors/*.vim .
 ```
 
-## 256 colorspace
-
-If using a tinted terminal theme designed to keep the 16 ANSI colors
-intact (a "256" variation) **and** have sucessfully modified your 256
-colorspace with [tinted-shell].This will cause vim to access the colors
-in the modified 256 colorspace. Please **do not** enable this simply
-because you have a 256 color terminal as this will cause colors to be
-displayed incorrectly.
-
-you'll need to add the following to your `~/.vimrc` **before** the
-colorsheme declaration.
-
-### Vim
-
-```vim
-let tinted_colorspace=256 " Access colors present in 256 colorspace
-```
-
-### Neovim (lua)
-
-```lua
--- Access colors present in 256 colorspace
-vim.g.tinted_colorspace = 256
-```
-
 ## Background transparency
 
 If you're using a terminal with an opacity of `< 1`, you'll notice that
 tinted-vim doesn't respect this transparency by default. You can enable
 transparent backgrounds with tinted-vim by adding the following settings
-to your vim/neovim setup.
+to your Vim/Neovim setup.
 
-### Vim
-
-Add the following variable to your `~/.vimrc` before your colorscheme
-declaration.
+Vimscript:
 
 ```vim
-let tinted_background_transparent=1 " Make vim background transparent to work alongside transparent terminal backgrounds
+let tinted_background_transparent=1
 ```
 
-### Neovim (lua)
-
-Add the following to your lua setup before your colorscheme declaration.
+Lua:
 
 ```lua
--- Make vim background transparent to work alongside transparent terminal backgrounds
 vim.g.tinted_background_transparent = 1
 ```
 

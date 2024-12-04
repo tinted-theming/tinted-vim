@@ -4,8 +4,8 @@
 			TINTED-VIM DOCUMENTATION
 
 
-                                                                  *tinted-vim*
-                                                           *neovim-highlights*
+                                                                    *tinted-vim*
+                                                             *neovim-highlights*
 A comprehensive guide to Neovim highlight groups
 
     1. Introduction ........................... |tinted-vim-introduction|
@@ -21,7 +21,7 @@ A comprehensive guide to Neovim highlight groups
        Vimscript............................... |tinted-vim-lang-vimscript|
 
 ==============================================================================
-1. INTRODUCTION                  *tinted-vim-introduction* *tinted-vim-colors*
+1. INTRODUCTION                      *tinted-vim-introduction* *tinted-vim-colors*
 
 This document provides a comprehensive reference for all highlight groups in
 Neovim. It includes GUI highlights, syntax highlights, Treesitter highlights,
@@ -59,7 +59,7 @@ g:tinted_gui16  base16  4     Blue              NA
 g:tinted_gui17  base17  5     Purple            NA
 
 ==============================================================================
-2. GUI HIGHLIGHTS                                             *tinted-vim-gui*
+2. GUI HIGHLIGHTS                                               *tinted-vim-gui*
 
 Source: |highlight-groups|
 
@@ -175,7 +175,7 @@ Tooltip		    Current font, background and foreground of the tooltips.
 		    Applicable highlight arguments: font, guibg, guifg.
 
 ==============================================================================
-3. DEFAULT SYNTAX HIGHLIGHTS                               *tinted-vim-syntax*
+3. DEFAULT SYNTAX HIGHLIGHTS                                 *tinted-vim-syntax*
 
 Source: |group-name|
 
@@ -231,7 +231,7 @@ Changed		changed line in a diff
 Removed		removed line in a diff
 
 ==============================================================================
-4. TREESITTER SYNTAX HIGHLIGHTS                        *tinted-vim-treesitter*
+4. TREESITTER SYNTAX HIGHLIGHTS                          *tinted-vim-treesitter*
 
 Source: |treesitter-highlight-groups|
 
@@ -351,7 +351,7 @@ Source: |treesitter-highlight-groups|
 @tag.delimiter          XML-style tag delimiters
 
 ==============================================================================
-5. LSP SEMANTIC SYNTAX HIGHLIGHTS                    *tinted-vim-lsp-semantic*
+5. LSP SEMANTIC SYNTAX HIGHLIGHTS                      *tinted-vim-lsp-semantic*
 
 Source: |lsp-semantic-highlight|
 
@@ -391,7 +391,7 @@ Source: |lsp-semantic-highlight|
 @lsp.mod.static          Class members (static members)
 
 ================================================================================
-6. LSP HIGHLIGHTS                                               *tinted-vim-lsp*
+6. LSP HIGHLIGHTS                                                 *tinted-vim-lsp*
 
 Source: |lsp-highlight|
 
@@ -411,7 +411,7 @@ LspSignatureActiveParameter
 
 
 ==============================================================================
-7. DIAGNOSTIC HIGHLIGHTS                               *tinted-vim-diagnostic*
+7. DIAGNOSTIC HIGHLIGHTS                                 *tinted-vim-diagnostic*
 
 Source: |diagnostic-highlights|
 
@@ -481,13 +481,13 @@ DiagnosticUnnecessary
     Used for unnecessary or unused code.
 
 ==============================================================================
-8. LANGUAGE SPECIFIC HIGHLIGHTS                              *tinted-vim-lang*
+8. LANGUAGE SPECIFIC HIGHLIGHTS                                *tinted-vim-lang*
 
 The ones you can actually see could differ, because the highlights defined 
 in |lsp-semantic-highlight| are not applied here.
 
 ------------------------------------------------------------------------------
-Lua							 *tinted-vim-lang-lua*
+Lua							   *tinted-vim-lang-lua*
 >lua
     -- Variable declarations and assignments
     local x = 10
@@ -656,7 +656,7 @@ Lua							 *tinted-vim-lang-lua*
     t:method(5)
 <
 ------------------------------------------------------------------------------
-Rust     					        *tinted-vim-lang-rust*
+Rust     					          *tinted-vim-lang-rust*
 >rust
     // External crate declaration
     extern crate some_library;
@@ -824,7 +824,7 @@ Rust     					        *tinted-vim-lang-rust*
     }
 <
 ------------------------------------------------------------------------------
-Vimscript					   *tinted-vim-lang-vimscript*
+Vimscript					     *tinted-vim-lang-vimscript*
 >vim
     " Function definition
     function! CompleteExample(arg1, ...)

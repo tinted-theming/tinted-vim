@@ -130,7 +130,7 @@ else
 endif
 
 " Theme setup
-let g:colors_name = 'base24-unikitty-reversible'
+let g:colors_name = 'base16-unikitty-reversible'
 
 " Highlighting function
 " Optional variables are attributes and guisp

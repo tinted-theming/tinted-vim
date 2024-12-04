@@ -130,7 +130,7 @@ else
 endif
 
 " Theme setup
-let g:colors_name = 'base24-atelier-forest'
+let g:colors_name = 'base16-atelier-forest'
 
 " Highlighting function
 " Optional variables are attributes and guisp

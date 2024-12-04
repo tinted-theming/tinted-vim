@@ -130,7 +130,7 @@ else
 endif
 
 " Theme setup
-let g:colors_name = 'base24-windows-10'
+let g:colors_name = 'base16-windows-10'
 
 " Highlighting function
 " Optional variables are attributes and guisp

@@ -455,8 +455,8 @@ if has('nvim-0.8.0')
   hi! link @markup.link.label Tag
   hi! link @markup.link.url @string.special.url
 
-  hi! link @markup.raw Identifier
-  " @markup.raw.block
+  call <sid>hi('@markup.raw',   s:gui04, '', s:cterm04, '', '', '')
+  hi! link @markup.raw.block Identifier
 
   hi! link @markup.list SpecialChar
   hi! link @markup.list.checked DiagnosticOk

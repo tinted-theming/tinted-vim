@@ -2,7 +2,7 @@
 
 " tinted-vim (https://github.com/tinted-theming/tinted-vim)
 " Scheme name: Deep Oceanic Next
-" Scheme author: spearkkk (https://github.com/spearkkk/deep-oceanic-next)
+" Scheme author: spearkkk (https://github.com/spearkkk)
 " Template author: Tinted Theming (https://github.com/tinted-theming)
 
 " This enables the coresponding base16-shell script to run so that
@@ -16,30 +16,30 @@ if !has('gui_running')
 endif
 
 " GUI colors
-let s:gui00        = '003b46'
-let s:gui01        = '004f5e'
-let s:gui02        = '006374'
-let s:gui03        = '007a8a'
+let s:gui00        = '001c1f'
+let s:gui01        = '002931'
+let s:gui02        = '003640'
+let s:gui03        = '004852'
 let s:gui04        = '0093a3'
-let s:gui05        = 'dce3e8'
-let s:gui06        = 'e6ebf0'
-let s:gui07        = 'f0f5f5'
-let s:gui08        = 'e6454b'
-let s:gui09        = 'ff6a4b'
-let s:gui0A        = 'ffcc66'
-let s:gui0B        = '85b57a'
-let s:gui0C        = '4da6a6'
-let s:gui0D        = '3a82e6'
-let s:gui0E        = '8c4de6'
-let s:gui0F        = 'e673a3'
-let s:gui10        = '001114'
-let s:gui11        = '000a0d'
-let s:gui12        = 'ff5a61'
-let s:gui13        = 'ffdd80'
-let s:gui14        = '99d8a0'
-let s:gui15        = '66cccc'
-let s:gui16        = '4da6ff'
-let s:gui17        = 'a366ff'
+let s:gui05        = 'd4e1e8'
+let s:gui06        = 'e0e9ef'
+let s:gui07        = 'f2f7f9'
+let s:gui08        = 'd3464d'
+let s:gui09        = 'e37552'
+let s:gui0A        = 'f3b863'
+let s:gui0B        = '63b784'
+let s:gui0C        = '4fb7ae'
+let s:gui0D        = '568ccf'
+let s:gui0E        = '8b66d6'
+let s:gui0F        = 'd0658e'
+let s:gui10        = '1f2628'
+let s:gui11        = '2a2f30'
+let s:gui12        = 'ff6670'
+let s:gui13        = 'ffe08a'
+let s:gui14        = '72e1a6'
+let s:gui15        = '4de3e3'
+let s:gui16        = '5caeff'
+let s:gui17        = 'b788ff'
 
 " Terminal colors
 let s:cterm00  = '00'
@@ -93,22 +93,22 @@ call s:create_color_globals()
 
 " Integrated Terminal colors
 let s:colors = [
-  \ '#003b46',
-  \ '#e6454b',
-  \ '#85b57a',
-  \ '#ffcc66',
-  \ '#3a82e6',
-  \ '#8c4de6',
-  \ '#4da6a6',
-  \ '#dce3e8',
-  \ '#007a8a',
-  \ '#ff5a61',
-  \ '#99d8a0',
-  \ '#ffdd80',
-  \ '#4da6ff',
-  \ '#a366ff',
-  \ '#66cccc',
-  \ '#f0f5f5'
+  \ '#001c1f',
+  \ '#d3464d',
+  \ '#63b784',
+  \ '#f3b863',
+  \ '#568ccf',
+  \ '#8b66d6',
+  \ '#4fb7ae',
+  \ '#d4e1e8',
+  \ '#004852',
+  \ '#ff6670',
+  \ '#72e1a6',
+  \ '#ffe08a',
+  \ '#5caeff',
+  \ '#b788ff',
+  \ '#4de3e3',
+  \ '#f2f7f9'
 \]
 
 if has('nvim')
@@ -247,7 +247,7 @@ hi! link LineNrBelow LineNr
 call <sid>hi('CursorLineNr',   s:gui04, s:guibg, s:cterm04, s:ctermbg, 'bold', '')
 call <sid>hi('CursorLineFold', s:gui13, s:guibg, s:cterm13, s:ctermbg, '', '')
 hi! link CursorLineSign SignColumn
-call <sid>hi('MatchParen',     '', '', '', '',  'inverse', '')
+call <sid>hi('MatchParen',     s:gui06, '', s:cterm06, '',  'bold', '')
 call <sid>hi('ModeMsg',        s:gui05, '', s:cterm05, '', '', '')
 hi! link MsgArea None
 hi! link MsgSeparator WinSeparator

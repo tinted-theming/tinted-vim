@@ -247,7 +247,7 @@ hi! link LineNrBelow LineNr
 call <sid>hi('CursorLineNr',   s:gui04, s:guibg, s:cterm04, s:ctermbg, 'bold', '')
 call <sid>hi('CursorLineFold', s:gui13, s:guibg, s:cterm13, s:ctermbg, '', '')
 hi! link CursorLineSign SignColumn
-call <sid>hi('MatchParen',     '', '', '', '',  'inverse', '')
+call <sid>hi('MatchParen',     s:gui06, '', s:cterm06, '',  'bold', '')
 call <sid>hi('ModeMsg',        s:gui05, '', s:cterm05, '', '', '')
 hi! link MsgArea None
 hi! link MsgSeparator WinSeparator

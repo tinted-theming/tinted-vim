@@ -340,7 +340,7 @@ call <sid>hi('Typedef',        s:gui0A, '', s:cterm0A, '', 'none', '')
 
 call <sid>hi('Special',        s:gui0C, '', s:cterm0C, '', 'none', '')
 call <sid>hi('SpecialChar',    s:gui0A, '', s:cterm0A, '', 'none', '')
-call <sid>hi('Tag',            s:gui08, '', s:cterm08, '', 'none', '')
+call <sid>hi('Tag',            s:gui09, '', s:cterm09, '', 'none', '')
 call <sid>hi('Delimiter',      s:gui05, '', s:cterm05, '', 'none', '')
 call <sid>hi('SpecialComment', s:gui0A, '', s:cterm0A, '', 'italic', '')
 
@@ -420,7 +420,7 @@ if has('nvim-0.8.0')
   hi! link @keyword.type Keyword
   hi! link @keyword.modifier Repeat
   hi! link @keyword.repeat Repeat
-  hi! link @keyword.return Repeat
+  hi! link @keyword.return Keyword
   hi! link @keyword.debug Debug
   hi! link @keyword.exception Exception
 
@@ -451,9 +451,9 @@ if has('nvim-0.8.0')
   hi! link @markup.quote String
   hi! link @markup.math Special
 
-  hi! link @markup.link Operator
-  hi! link @markup.link.label Tag
-  hi! link @markup.link.url @string.special.url
+  call <sid>hi('@markup.link',  s:gui08, '', s:cterm08, '', '', '')
+  hi! link @markup.link.label   @markup.link
+  hi! link @markup.link.url     Identifier
 
   call <sid>hi('@markup.raw',   s:gui04, '', s:cterm04, '', '', '')
   hi! link @markup.raw.block Identifier
@@ -466,10 +466,10 @@ if has('nvim-0.8.0')
   hi! link @diff.minus Removed
   hi! link @diff.delta Changed
 
-  hi! link @tag Tag
-  call <sid>hi('@tag.builtin',   s:gui08, '', s:cterm08, '', 'italic', '')
-  call <sid>hi('@tag.attribute', s:gui09, '', s:cterm09, '', 'italic', '')
-  hi! link @tag.delimiter Delimiter
+  hi! link @tag                 Tag
+  call <sid>hi('@tag.builtin',  s:gui09, '', s:cterm09, '', 'italic', '')
+  hi! link @tag.attribute       Special
+  hi! link @tag.delimiter       Delimiter
 
 
   " LSP Semantic Token
@@ -517,22 +517,22 @@ if has('nvim-0.8.0')
   hi! link @lsp.type.selfKeyword.rust               @variable.builtin
   hi! link @lsp.type.selfTypeKeyword.rust           @type.builtin
 
-  call <sid>hi('@lsp.mod.attribute',    '', '', '', '', 'italic', '')
+  call <sid>hi('@lsp.mod.attribute',                '', '', '', '', 'italic', '')
   hi! link @lsp.mod.controlFlow                     @keyword.repeat
-  hi! link @lsp.mod.intraDocLink.rust               @string.special.url
+  hi! link @lsp.mod.intraDocLink.rust               @markup.link
 
-  hi! link @lsp.typemod.generic.injected            @variable
-  hi! link @lsp.typemod.operator.controlFlow        @operator
-  hi! link @lsp.typemod.function.associated.Rust    @function.method
+  hi! link @lsp.typemod.generic.injected.rust       @variable
+  hi! link @lsp.typemod.operator.controlFlow.rust   @operator
+  hi! link @lsp.typemod.function.associated.rust    @function.method
 
   " LUA
-  hi! link @lsp.typemod.keyword.documentation.lua @tag
+  hi! link @lsp.typemod.keyword.documentation.lua   @tag
 
   " Markdown
   hi! link @lsp.type.class.markdown @lsp
 
 
-  " LSP non syntax
+  " LSP not syntax
 
   hi! link LspReferenceText Search
   call <sid>hi('LspReferenceRead',  s:gui01, s:gui14, s:cterm01, s:cterm14, '', '')

@@ -1,5 +1,8 @@
 # Tinted Vim
 
+Formerly base16-vim, but now supports multiple scheme systems, currently
+[base16] and [base24], so we updated the name to reflect that.
+
 [![Matrix Chat](https://img.shields.io/matrix/tinted-theming:matrix.org)](https://matrix.to/#/#tinted-theming:matrix.org)
 
 Supports console [Vim], graphical Vim and [Neovim].
@@ -248,6 +251,8 @@ augroup END
 See [CONTRIBUTING.md], which contains building and contributing
 instructions.
 
+[base16]: https://github.com/tinted-theming/home/blob/main/styling.md
+[base24]: https://github.com/tinted-theming/base24/blob/main/styling.md
 [Vim]: https://github.com/vim/vim
 [Neovim]: https://github.com/neovim/neovim
 [250 themes]: https://github.com/tinted-theming/schemes

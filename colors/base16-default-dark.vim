@@ -210,6 +210,24 @@ call <sid>hi('tinted_gui15', s:gui15, '', s:cterm15, '', '', '')
 call <sid>hi('tinted_gui16', s:gui16, '', s:cterm16, '', '', '')
 call <sid>hi('tinted_gui17', s:gui17, '', s:cterm17, '', '', '')
 
+" Legacy vars for lualine
+
+call <sid>hi('base16_gui00', s:gui00, '', s:cterm00, '', '', '')
+call <sid>hi('base16_gui01', s:gui01, '', s:cterm01, '', '', '')
+call <sid>hi('base16_gui02', s:gui02, '', s:cterm02, '', '', '')
+call <sid>hi('base16_gui03', s:gui03, '', s:cterm03, '', '', '')
+call <sid>hi('base16_gui04', s:gui04, '', s:cterm04, '', '', '')
+call <sid>hi('base16_gui05', s:gui05, '', s:cterm05, '', '', '')
+call <sid>hi('base16_gui06', s:gui06, '', s:cterm06, '', '', '')
+call <sid>hi('base16_gui07', s:gui07, '', s:cterm07, '', '', '')
+call <sid>hi('base16_gui08', s:gui08, '', s:cterm08, '', '', '')
+call <sid>hi('base16_gui09', s:gui09, '', s:cterm09, '', '', '')
+call <sid>hi('base16_gui0A', s:gui0A, '', s:cterm0A, '', '', '')
+call <sid>hi('base16_gui0B', s:gui0B, '', s:cterm0B, '', '', '')
+call <sid>hi('base16_gui0C', s:gui0C, '', s:cterm0C, '', '', '')
+call <sid>hi('base16_gui0D', s:gui0D, '', s:cterm0D, '', '', '')
+call <sid>hi('base16_gui0E', s:gui0E, '', s:cterm0E, '', '', '')
+call <sid>hi('base16_gui0F', s:gui0F, '', s:cterm0F, '', '', '')
 
 " Vim editor colors
 

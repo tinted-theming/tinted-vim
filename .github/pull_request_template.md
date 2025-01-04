@@ -6,5 +6,6 @@ Fixes #ISSUE_NUMBER
 
 ## Checklist
 
-- [ ] I have included the built files `./colors/*.vim` in a separate commit and followed [the build instructions](https://github.com/tinted-theming/tinted-vim/blob/main/CONTRIBUTING.md)
+- [ ] I have **NOT** included the built files `./colors/*.vim` in this
+  PR since the bot will build the files on merge to `main`
 - [ ] I have confirmed that my changes produce no regressions after building

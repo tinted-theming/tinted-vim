@@ -1,8 +1,8 @@
 " vi:syntax=vim
 
 " tinted-vim (https://github.com/tinted-theming/tinted-vim)
-" Scheme name: Gruvbox dark, medium
-" Scheme author: Tinted Theming (https://github.com/tinted-theming), morhetz (https://github.com/morhetz/gruvbox)
+" Scheme name: Kanagawa Dragon
+" Scheme author: Tommaso Laurenzi (https://github.com/rebelot)
 " Template author: Tinted Theming (https://github.com/tinted-theming)
 
 " This enables the coresponding base16-shell script to run so that
@@ -11,35 +11,35 @@
 "   let g:tinted_shell_path=path/to/shell/scripts
 if !has('gui_running')
   if exists('g:tinted_shell_path')
-    execute 'silent !/bin/sh '.g:tinted_shell_path.'/base16/gruvbox-dark-medium.sh'
+    execute 'silent !/bin/sh '.g:tinted_shell_path.'/base16/kanagawa-dragon.sh'
   endif
 endif
 
 " GUI colors
-let s:gui00        = '282828'
-let s:gui01        = '3c3836'
-let s:gui02        = '504945'
-let s:gui03        = '665c54'
-let s:gui04        = '928374'
-let s:gui05        = 'ebdbb2'
-let s:gui06        = 'fbf1c7'
-let s:gui07        = 'f9f5d7'
-let s:gui08        = 'cc241d'
-let s:gui09        = 'd65d0e'
-let s:gui0A        = 'd79921'
-let s:gui0B        = '98971a'
-let s:gui0C        = '689d6a'
-let s:gui0D        = '458588'
-let s:gui0E        = 'b16286'
-let s:gui0F        = '9d0006'
-let s:gui10        = '282828'
-let s:gui11        = '282828'
-let s:gui12        = 'cc241d'
-let s:gui13        = 'd79921'
-let s:gui14        = '98971a'
-let s:gui15        = '689d6a'
-let s:gui16        = '458588'
-let s:gui17        = 'b16286'
+let s:gui00        = '0d0c0c'
+let s:gui01        = '1d1c19'
+let s:gui02        = '282727'
+let s:gui03        = '737c73'
+let s:gui04        = 'a6a69c'
+let s:gui05        = 'c5c9c5'
+let s:gui06        = '7a8382'
+let s:gui07        = 'c5c9c5'
+let s:gui08        = 'c4746e'
+let s:gui09        = 'b98d7b'
+let s:gui0A        = 'c4b28a'
+let s:gui0B        = '87a987'
+let s:gui0C        = '8ea4a2'
+let s:gui0D        = '8ba4b0'
+let s:gui0E        = '8992a7'
+let s:gui0F        = 'a292a3'
+let s:gui10        = '0d0c0c'
+let s:gui11        = '0d0c0c'
+let s:gui12        = 'c4746e'
+let s:gui13        = 'c4b28a'
+let s:gui14        = '87a987'
+let s:gui15        = '8ea4a2'
+let s:gui16        = '8ba4b0'
+let s:gui17        = '8992a7'
 
 " Terminal colors
 let s:cterm00  = '00'
@@ -95,22 +95,22 @@ call s:create_color_globals()
 
 " Integrated Terminal colors
 let s:colors = [
-  \ '#282828',
-  \ '#cc241d',
-  \ '#98971a',
-  \ '#d79921',
-  \ '#458588',
-  \ '#b16286',
-  \ '#689d6a',
-  \ '#ebdbb2',
-  \ '#665c54',
-  \ '#cc241d',
-  \ '#98971a',
-  \ '#d79921',
-  \ '#458588',
-  \ '#b16286',
-  \ '#689d6a',
-  \ '#f9f5d7'
+  \ '#0d0c0c',
+  \ '#c4746e',
+  \ '#87a987',
+  \ '#c4b28a',
+  \ '#8ba4b0',
+  \ '#8992a7',
+  \ '#8ea4a2',
+  \ '#c5c9c5',
+  \ '#737c73',
+  \ '#c4746e',
+  \ '#87a987',
+  \ '#c4b28a',
+  \ '#8ba4b0',
+  \ '#8992a7',
+  \ '#8ea4a2',
+  \ '#c5c9c5'
 \]
 
 if has('nvim')
@@ -132,7 +132,7 @@ else
 endif
 
 " Theme setup
-let g:colors_name = 'base16-gruvbox-dark-medium'
+let g:colors_name = 'base16-kanagawa-dragon'
 
 " Highlighting function
 " Optional variables are attributes and guisp

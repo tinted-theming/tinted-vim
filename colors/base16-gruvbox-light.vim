@@ -1,7 +1,7 @@
 " vi:syntax=vim
 
 " tinted-vim (https://github.com/tinted-theming/tinted-vim)
-" Scheme name: Gruvbox dark, medium
+" Scheme name: Gruvbox Light
 " Scheme author: Tinted Theming (https://github.com/tinted-theming), morhetz (https://github.com/morhetz/gruvbox)
 " Template author: Tinted Theming (https://github.com/tinted-theming)
 
@@ -11,19 +11,19 @@
 "   let g:tinted_shell_path=path/to/shell/scripts
 if !has('gui_running')
   if exists('g:tinted_shell_path')
-    execute 'silent !/bin/sh '.g:tinted_shell_path.'/base16/gruvbox-dark-medium.sh'
+    execute 'silent !/bin/sh '.g:tinted_shell_path.'/base16/gruvbox-light.sh'
   endif
 endif
 
 " GUI colors
-let s:gui00        = '282828'
-let s:gui01        = '3c3836'
-let s:gui02        = '504945'
-let s:gui03        = '665c54'
-let s:gui04        = '928374'
-let s:gui05        = 'ebdbb2'
-let s:gui06        = 'fbf1c7'
-let s:gui07        = 'f9f5d7'
+let s:gui00        = 'fbf1c7'
+let s:gui01        = 'ebdbb2'
+let s:gui02        = 'd5c4a1'
+let s:gui03        = 'bdae93'
+let s:gui04        = '7c6f64'
+let s:gui05        = '3c3836'
+let s:gui06        = '282828'
+let s:gui07        = '1d2021'
 let s:gui08        = 'cc241d'
 let s:gui09        = 'd65d0e'
 let s:gui0A        = 'd79921'
@@ -32,8 +32,8 @@ let s:gui0C        = '689d6a'
 let s:gui0D        = '458588'
 let s:gui0E        = 'b16286'
 let s:gui0F        = '9d0006'
-let s:gui10        = '282828'
-let s:gui11        = '282828'
+let s:gui10        = 'fbf1c7'
+let s:gui11        = 'fbf1c7'
 let s:gui12        = 'cc241d'
 let s:gui13        = 'd79921'
 let s:gui14        = '98971a'
@@ -95,22 +95,22 @@ call s:create_color_globals()
 
 " Integrated Terminal colors
 let s:colors = [
-  \ '#282828',
+  \ '#fbf1c7',
   \ '#cc241d',
   \ '#98971a',
   \ '#d79921',
   \ '#458588',
   \ '#b16286',
   \ '#689d6a',
-  \ '#ebdbb2',
-  \ '#665c54',
+  \ '#3c3836',
+  \ '#bdae93',
   \ '#cc241d',
   \ '#98971a',
   \ '#d79921',
   \ '#458588',
   \ '#b16286',
   \ '#689d6a',
-  \ '#f9f5d7'
+  \ '#1d2021'
 \]
 
 if has('nvim')
@@ -132,7 +132,7 @@ else
 endif
 
 " Theme setup
-let g:colors_name = 'base16-gruvbox-dark-medium'
+let g:colors_name = 'base16-gruvbox-light'
 
 " Highlighting function
 " Optional variables are attributes and guisp

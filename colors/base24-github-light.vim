@@ -1,7 +1,7 @@
 " vi:syntax=vim
 
 " tinted-vim (https://github.com/tinted-theming/tinted-vim)
-" Scheme name: Github
+" Scheme name: Github Light
 " Scheme author: Tinted Theming (https://github.com/tinted-theming)
 " Template author: Tinted Theming (https://github.com/tinted-theming)
 
@@ -11,7 +11,7 @@
 "   let g:tinted_shell_path=path/to/shell/scripts
 if !has('gui_running')
   if exists('g:tinted_shell_path')
-    execute 'silent !/bin/sh '.g:tinted_shell_path.'/base16/github.sh'
+    execute 'silent !/bin/sh '.g:tinted_shell_path.'/base24/github-light.sh'
   endif
 endif
 
@@ -32,14 +32,14 @@ let s:gui0C        = '339d9b'
 let s:gui0D        = '218bff'
 let s:gui0E        = 'a475f9'
 let s:gui0F        = '4d2d00'
-let s:gui10        = 'eaeef2'
-let s:gui11        = 'eaeef2'
-let s:gui12        = 'fa4549'
-let s:gui13        = 'bf8700'
-let s:gui14        = '2da44e'
-let s:gui15        = '339d9b'
-let s:gui16        = '218bff'
-let s:gui17        = 'a475f9'
+let s:gui10        = '1f2328'
+let s:gui11        = '000000'
+let s:gui12        = 'ff8182'
+let s:gui13        = 'd4a72c'
+let s:gui14        = '4ac26b'
+let s:gui15        = '49bcb7'
+let s:gui16        = '54aeff'
+let s:gui17        = 'c297ff'
 
 " Terminal colors
 let s:cterm00  = '00'
@@ -60,12 +60,12 @@ let s:cterm0E  = '05'
 let s:cterm0F  = '17'
 let s:cterm10  = s:cterm00
 let s:cterm11  = s:cterm00
-let s:cterm12  = '01'
-let s:cterm13  = '03'
-let s:cterm14  = '02'
-let s:cterm15  = '06'
-let s:cterm16  = '04'
-let s:cterm17  = '05'
+let s:cterm12  = '09'
+let s:cterm13  = '11'
+let s:cterm14  = '10'
+let s:cterm15  = '14'
+let s:cterm16  = '12'
+let s:cterm17  = '13'
 
 " base16_colorspace` and `base16colorspace` are legacy properties and
 " exist to keep existing setups from breaking
@@ -104,12 +104,12 @@ let s:colors = [
   \ '#339d9b',
   \ '#424a53',
   \ '#8c959f',
-  \ '#fa4549',
-  \ '#2da44e',
-  \ '#bf8700',
-  \ '#218bff',
-  \ '#a475f9',
-  \ '#339d9b',
+  \ '#ff8182',
+  \ '#4ac26b',
+  \ '#d4a72c',
+  \ '#54aeff',
+  \ '#c297ff',
+  \ '#49bcb7',
   \ '#1f2328'
 \]
 
@@ -132,7 +132,7 @@ else
 endif
 
 " Theme setup
-let g:colors_name = 'base16-github'
+let g:colors_name = 'base24-github-light'
 
 " Highlighting function
 " Optional variables are attributes and guisp

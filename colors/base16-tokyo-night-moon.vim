@@ -779,7 +779,7 @@ call <sid>hi('CocListMode',        s:gui01, s:gui0B,  s:cterm01, s:cterm0B, 'bol
 call <sid>hi('CocListPath',        s:gui01, s:gui0B,  s:cterm01, s:cterm0B, '', '')
 call <sid>hi('CocSessionsName',    s:gui05, '', s:cterm05, '', '', '')
 
-" fugtive
+" fugitive
 hi link diffAdded GitAddSign
 hi link diffChanged GitChangeSign
 hi link diffRemoved GitDeleteSign

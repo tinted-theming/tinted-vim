@@ -19,8 +19,8 @@ endif
 let s:gui00        = '0f0f0f'
 let s:gui01        = '191919'
 let s:gui02        = '262626'
-let s:gui03        = '4c4c4c'
-let s:gui04        = 'ac8a8c'
+let s:gui03        = '393939'
+let s:gui04        = '4c4c4c'
 let s:gui05        = 'cacaca'
 let s:gui06        = 'e7e7e7'
 let s:gui07        = 'f0f0f0'
@@ -103,7 +103,7 @@ let s:colors = [
   \ '#ac8aac',
   \ '#8aabac',
   \ '#cacaca',
-  \ '#4c4c4c',
+  \ '#393939',
   \ '#ac8a8c',
   \ '#8aac8b',
   \ '#aca98a',

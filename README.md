@@ -236,6 +236,13 @@ If you want to do some local customization, you can add something like
 this to your `~/.vimrc`:
 
 ```vim
+" Set these to 0 to disable text styles. Default is 1
+let g:tinted_bold = 0
+let g:tinted_italic = 0
+let g:tinted_strikethrough = 0
+let g:tinted_underline = 0
+let g:tinted_undercurl = 0
+
 function! s:tinted_customize() abort
   call Tinted_Hi("MatchParen", g:tinted_gui05, g:tinted_gui03, g:tinted_cterm05, g:tinted_cterm03, "bold,italic", "")
 endfunction

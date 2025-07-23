@@ -69,7 +69,7 @@ let s:cterm17  = '05'
 
 " base16_colorspace` and `base16colorspace` are legacy properties and
 " exist to keep existing setups from breaking
-if (exists('base16colorspace') && base16_colorspace !=? '256') || (exists('tinted_colorspace') && tinted_colorspace !=? '256')
+if (exists('base16_colorspace') && base16_colorspace !=? '256') || (exists('base16colorspace') && base16colorspace !=? '256') || (exists('tinted_colorspace') && tinted_colorspace !=? '256')
   " We have only 16 colors so define fallbacks for codes > 15
   let s:cterm01 = s:cterm00
   let s:cterm02 = s:cterm03

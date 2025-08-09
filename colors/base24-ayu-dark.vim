@@ -1,7 +1,7 @@
 " vi:syntax=vim
 
 " tinted-vim (https://github.com/tinted-theming/tinted-vim)
-" Scheme name: Ayu Light
+" Scheme name: Ayu Dark
 " Scheme author: Tinted Theming (https://github.com/tinted-theming), Ayu Theme (https://github.com/ayu-theme)
 " Template author: Tinted Theming (https://github.com/tinted-theming)
 
@@ -11,35 +11,35 @@
 "   let g:tinted_shell_path=path/to/shell/scripts
 if !has('gui_running')
   if exists('g:tinted_shell_path')
-    execute 'silent !/bin/sh '.g:tinted_shell_path.'/base24/ayu-light.sh'
+    execute 'silent !/bin/sh '.g:tinted_shell_path.'/base24/ayu-dark.sh'
   endif
 endif
 
 " GUI colors
-let s:gui00        = 'f8f9fa'
-let s:gui01        = 'edeff1'
-let s:gui02        = 'd2d4d8'
-let s:gui03        = 'a0a6ac'
-let s:gui04        = '8a9199'
-let s:gui05        = '5c6166'
-let s:gui06        = '4e5257'
-let s:gui07        = '404447'
-let s:gui08        = 'f07171'
-let s:gui09        = 'fa8d3e'
-let s:gui0A        = 'f2ae49'
-let s:gui0B        = '6cbf49'
-let s:gui0C        = '4cbf99'
-let s:gui0D        = '399ee6'
-let s:gui0E        = 'a37acc'
-let s:gui0F        = 'e6ba7e'
-let s:gui10        = 'f9f9f9'
-let s:gui11        = 'ffffff'
-let s:gui12        = 'ff7383'
-let s:gui13        = 'ffaa33'
-let s:gui14        = '86b300'
-let s:gui15        = '55b4d4'
-let s:gui16        = '478acc'
-let s:gui17        = 'b595d6'
+let s:gui00        = '0b0e14'
+let s:gui01        = '131721'
+let s:gui02        = '202229'
+let s:gui03        = '3e4b59'
+let s:gui04        = 'bfbdb6'
+let s:gui05        = 'e6e1cf'
+let s:gui06        = 'ece8db'
+let s:gui07        = 'f2f0e7'
+let s:gui08        = 'f07178'
+let s:gui09        = 'ff8f40'
+let s:gui0A        = 'ffb454'
+let s:gui0B        = 'aad94c'
+let s:gui0C        = '95e6cb'
+let s:gui0D        = '59c2ff'
+let s:gui0E        = 'd2a6ff'
+let s:gui0F        = 'e6b450'
+let s:gui10        = '0a0d13'
+let s:gui11        = '06070a'
+let s:gui12        = 'f26d78'
+let s:gui13        = 'e6b673'
+let s:gui14        = '7fd962'
+let s:gui15        = '39bae6'
+let s:gui16        = '73b8ff'
+let s:gui17        = 'ddbcff'
 
 " Terminal colors
 let s:cterm00  = '00'
@@ -95,22 +95,22 @@ call s:create_color_globals()
 
 " Integrated Terminal colors
 let s:colors = [
-  \ '#f8f9fa',
-  \ '#f07171',
-  \ '#6cbf49',
-  \ '#f2ae49',
-  \ '#399ee6',
-  \ '#a37acc',
-  \ '#4cbf99',
-  \ '#5c6166',
-  \ '#a0a6ac',
-  \ '#ff7383',
-  \ '#86b300',
-  \ '#ffaa33',
-  \ '#478acc',
-  \ '#b595d6',
-  \ '#55b4d4',
-  \ '#404447'
+  \ '#0b0e14',
+  \ '#f07178',
+  \ '#aad94c',
+  \ '#ffb454',
+  \ '#59c2ff',
+  \ '#d2a6ff',
+  \ '#95e6cb',
+  \ '#e6e1cf',
+  \ '#3e4b59',
+  \ '#f26d78',
+  \ '#7fd962',
+  \ '#e6b673',
+  \ '#73b8ff',
+  \ '#ddbcff',
+  \ '#39bae6',
+  \ '#f2f0e7'
 \]
 
 if has('nvim')
@@ -160,7 +160,7 @@ let s:attrs = {
       \}
 
 " Theme setup
-let g:colors_name = 'base24-ayu-light'
+let g:colors_name = 'base24-ayu-dark'
 
 " Highlighting function
 " Optional variables are attributes and guisp

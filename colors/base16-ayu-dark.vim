@@ -2,7 +2,7 @@
 
 " tinted-vim (https://github.com/tinted-theming/tinted-vim)
 " Scheme name: Ayu Dark
-" Scheme author: Khue Nguyen &lt;Z5483Y@gmail.com&gt;
+" Scheme author: Tinted Theming (https://github.com/tinted-theming), Ayu Theme (https://github.com/ayu-theme)
 " Template author: Tinted Theming (https://github.com/tinted-theming)
 
 " This enables the coresponding base16-shell script to run so that
@@ -16,27 +16,27 @@ if !has('gui_running')
 endif
 
 " GUI colors
-let s:gui00        = '0f1419'
+let s:gui00        = '0b0e14'
 let s:gui01        = '131721'
-let s:gui02        = '272d38'
+let s:gui02        = '202229'
 let s:gui03        = '3e4b59'
 let s:gui04        = 'bfbdb6'
 let s:gui05        = 'e6e1cf'
-let s:gui06        = 'e6e1cf'
-let s:gui07        = 'f3f4f5'
+let s:gui06        = 'ece8db'
+let s:gui07        = 'f2f0e7'
 let s:gui08        = 'f07178'
 let s:gui09        = 'ff8f40'
 let s:gui0A        = 'ffb454'
-let s:gui0B        = 'b8cc52'
+let s:gui0B        = 'aad94c'
 let s:gui0C        = '95e6cb'
 let s:gui0D        = '59c2ff'
 let s:gui0E        = 'd2a6ff'
-let s:gui0F        = 'e6b673'
-let s:gui10        = '0f1419'
-let s:gui11        = '0f1419'
+let s:gui0F        = 'e6b450'
+let s:gui10        = '0b0e14'
+let s:gui11        = '0b0e14'
 let s:gui12        = 'f07178'
 let s:gui13        = 'ffb454'
-let s:gui14        = 'b8cc52'
+let s:gui14        = 'aad94c'
 let s:gui15        = '95e6cb'
 let s:gui16        = '59c2ff'
 let s:gui17        = 'd2a6ff'
@@ -95,9 +95,9 @@ call s:create_color_globals()
 
 " Integrated Terminal colors
 let s:colors = [
-  \ '#0f1419',
+  \ '#0b0e14',
   \ '#f07178',
-  \ '#b8cc52',
+  \ '#aad94c',
   \ '#ffb454',
   \ '#59c2ff',
   \ '#d2a6ff',
@@ -105,12 +105,12 @@ let s:colors = [
   \ '#e6e1cf',
   \ '#3e4b59',
   \ '#f07178',
-  \ '#b8cc52',
+  \ '#aad94c',
   \ '#ffb454',
   \ '#59c2ff',
   \ '#d2a6ff',
   \ '#95e6cb',
-  \ '#f3f4f5'
+  \ '#f2f0e7'
 \]
 
 if has('nvim')

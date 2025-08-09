@@ -2,7 +2,7 @@
 
 " tinted-vim (https://github.com/tinted-theming/tinted-vim)
 " Scheme name: Ayu Light
-" Scheme author: Khue Nguyen &lt;Z5483Y@gmail.com&gt;
+" Scheme author: Tinted Theming (https://github.com/tinted-theming), Ayu Theme (https://github.com/ayu-theme)
 " Template author: Tinted Theming (https://github.com/tinted-theming)
 
 " This enables the coresponding base16-shell script to run so that
@@ -16,29 +16,29 @@ if !has('gui_running')
 endif
 
 " GUI colors
-let s:gui00        = 'fafafa'
-let s:gui01        = 'f3f4f5'
-let s:gui02        = 'f8f9fa'
-let s:gui03        = 'abb0b6'
-let s:gui04        = '828c99'
-let s:gui05        = '5c6773'
-let s:gui06        = '242936'
-let s:gui07        = '1a1f29'
-let s:gui08        = 'f07178'
+let s:gui00        = 'f8f9fa'
+let s:gui01        = 'edeff1'
+let s:gui02        = 'd2d4d8'
+let s:gui03        = 'a0a6ac'
+let s:gui04        = '8a9199'
+let s:gui05        = '5c6166'
+let s:gui06        = '4e5257'
+let s:gui07        = '404447'
+let s:gui08        = 'f07171'
 let s:gui09        = 'fa8d3e'
 let s:gui0A        = 'f2ae49'
-let s:gui0B        = '86b300'
+let s:gui0B        = '6cbf49'
 let s:gui0C        = '4cbf99'
-let s:gui0D        = '36a3d9'
+let s:gui0D        = '399ee6'
 let s:gui0E        = 'a37acc'
 let s:gui0F        = 'e6ba7e'
-let s:gui10        = 'fafafa'
-let s:gui11        = 'fafafa'
-let s:gui12        = 'f07178'
+let s:gui10        = 'f8f9fa'
+let s:gui11        = 'f8f9fa'
+let s:gui12        = 'f07171'
 let s:gui13        = 'f2ae49'
-let s:gui14        = '86b300'
+let s:gui14        = '6cbf49'
 let s:gui15        = '4cbf99'
-let s:gui16        = '36a3d9'
+let s:gui16        = '399ee6'
 let s:gui17        = 'a37acc'
 
 " Terminal colors
@@ -95,22 +95,22 @@ call s:create_color_globals()
 
 " Integrated Terminal colors
 let s:colors = [
-  \ '#fafafa',
-  \ '#f07178',
-  \ '#86b300',
+  \ '#f8f9fa',
+  \ '#f07171',
+  \ '#6cbf49',
   \ '#f2ae49',
-  \ '#36a3d9',
+  \ '#399ee6',
   \ '#a37acc',
   \ '#4cbf99',
-  \ '#5c6773',
-  \ '#abb0b6',
-  \ '#f07178',
-  \ '#86b300',
+  \ '#5c6166',
+  \ '#a0a6ac',
+  \ '#f07171',
+  \ '#6cbf49',
   \ '#f2ae49',
-  \ '#36a3d9',
+  \ '#399ee6',
   \ '#a37acc',
   \ '#4cbf99',
-  \ '#1a1f29'
+  \ '#404447'
 \]
 
 if has('nvim')

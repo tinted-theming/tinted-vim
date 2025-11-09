@@ -1,7 +1,7 @@
 " vi:syntax=vim
 
 " tinted-vim (https://github.com/tinted-theming/tinted-vim)
-" Scheme name: Pro Light
+" Scheme name: Soft Server
 " Scheme author: FredHappyface (https://github.com/fredHappyface)
 " Template author: Tinted Theming (https://github.com/tinted-theming)
 
@@ -11,35 +11,35 @@
 "   let g:tinted_shell_path=path/to/shell/scripts
 if !has('gui_running')
   if exists('g:tinted_shell_path')
-    execute 'silent !/bin/sh '.g:tinted_shell_path.'/base24/pro-light.sh'
+    execute 'silent !/bin/sh '.g:tinted_shell_path.'/base16/soft-server.sh'
   endif
 endif
 
 " GUI colors
-let s:gui00        = 'feffff'
-let s:gui01        = 'f1f1f1'
-let s:gui02        = 'dcdcdc'
-let s:gui03        = 'cccccc'
-let s:gui04        = '757575'
-let s:gui05        = '4f4f4f'
-let s:gui06        = '323232'
-let s:gui07        = '000000'
-let s:gui08        = 'e4492b'
-let s:gui09        = 'c58e40'
-let s:gui0A        = 'c5c340'
-let s:gui0B        = '50d048'
-let s:gui0C        = '4ed1dd'
-let s:gui0D        = '3a75ff'
-let s:gui0E        = 'ec65e7'
-let s:gui0F        = '722415'
-let s:gui10        = '6a6a6a'
-let s:gui11        = '353535'
-let s:gui12        = 'ff6640'
-let s:gui13        = 'f2f055'
-let s:gui14        = '61ee56'
-let s:gui15        = '60f6f8'
-let s:gui16        = '0081ff'
-let s:gui17        = 'ff7dfe'
+let s:gui00        = '211e2a'
+let s:gui01        = '2c2737'
+let s:gui02        = '3f3951'
+let s:gui03        = '6e6780'
+let s:gui04        = '8a829e'
+let s:gui05        = 'e4dee9'
+let s:gui06        = 'f2e8f0'
+let s:gui07        = 'ffffff'
+let s:gui08        = 'e965a5'
+let s:gui09        = 'f4b870'
+let s:gui0A        = 'ebde76'
+let s:gui0B        = 'b1f2a7'
+let s:gui0C        = 'b3f4f3'
+let s:gui0D        = '95a6f4'
+let s:gui0E        = 'ff79c6'
+let s:gui0F        = 'bd93f9'
+let s:gui10        = '211e2a'
+let s:gui11        = '211e2a'
+let s:gui12        = 'e965a5'
+let s:gui13        = 'ebde76'
+let s:gui14        = 'b1f2a7'
+let s:gui15        = 'b3f4f3'
+let s:gui16        = '95a6f4'
+let s:gui17        = 'ff79c6'
 
 " Terminal colors
 let s:cterm00  = '00'
@@ -60,12 +60,12 @@ let s:cterm0E  = '05'
 let s:cterm0F  = '17'
 let s:cterm10  = s:cterm00
 let s:cterm11  = s:cterm00
-let s:cterm12  = '09'
-let s:cterm13  = '11'
-let s:cterm14  = '10'
-let s:cterm15  = '14'
-let s:cterm16  = '12'
-let s:cterm17  = '13'
+let s:cterm12  = '01'
+let s:cterm13  = '03'
+let s:cterm14  = '02'
+let s:cterm15  = '06'
+let s:cterm16  = '04'
+let s:cterm17  = '05'
 
 " base16_colorspace` and `base16colorspace` are legacy properties and
 " exist to keep existing setups from breaking
@@ -95,22 +95,22 @@ call s:create_color_globals()
 
 " Integrated Terminal colors
 let s:colors = [
-  \ '#feffff',
-  \ '#e4492b',
-  \ '#50d048',
-  \ '#c5c340',
-  \ '#3a75ff',
-  \ '#ec65e7',
-  \ '#4ed1dd',
-  \ '#4f4f4f',
-  \ '#cccccc',
-  \ '#ff6640',
-  \ '#61ee56',
-  \ '#f2f055',
-  \ '#0081ff',
-  \ '#ff7dfe',
-  \ '#60f6f8',
-  \ '#000000'
+  \ '#211e2a',
+  \ '#e965a5',
+  \ '#b1f2a7',
+  \ '#ebde76',
+  \ '#95a6f4',
+  \ '#ff79c6',
+  \ '#b3f4f3',
+  \ '#e4dee9',
+  \ '#6e6780',
+  \ '#e965a5',
+  \ '#b1f2a7',
+  \ '#ebde76',
+  \ '#95a6f4',
+  \ '#ff79c6',
+  \ '#b3f4f3',
+  \ '#ffffff'
 \]
 
 if has('nvim')
@@ -160,7 +160,7 @@ let s:attrs = {
       \}
 
 " Theme setup
-let g:colors_name = 'base24-pro-light'
+let g:colors_name = 'base16-soft-server'
 
 " Highlighting function
 " Optional variables are attributes and guisp

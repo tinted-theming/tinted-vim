@@ -1,8 +1,8 @@
 " vi:syntax=vim
 
 " tinted-vim (https://github.com/tinted-theming/tinted-vim)
-" Scheme name: Eldritch
-" Scheme author: https://github.com/eldritch-theme
+" Scheme name: Cyberpunk
+" Scheme author: benjujo
 " Template author: Tinted Theming (https://github.com/tinted-theming)
 
 " This enables the coresponding base16-shell script to run so that
@@ -11,35 +11,35 @@
 "   let g:tinted_shell_path=path/to/shell/scripts
 if !has('gui_running')
   if exists('g:tinted_shell_path')
-    execute 'silent !/bin/sh '.g:tinted_shell_path.'/base24/eldritch.sh'
+    execute 'silent !/bin/sh '.g:tinted_shell_path.'/base16/cyberpunk.sh'
   endif
 endif
 
 " GUI colors
-let s:gui00        = '212337'
-let s:gui01        = '323449'
-let s:gui02        = '3b4261'
-let s:gui03        = '7081d0'
-let s:gui04        = 'a1abe0'
-let s:gui05        = 'ebfafa'
-let s:gui06        = 'f0f2f4'
+let s:gui00        = '000000'
+let s:gui01        = '2b2b2b'
+let s:gui02        = '383838'
+let s:gui03        = '4f4f4f'
+let s:gui04        = '8b8989'
+let s:gui05        = 'dcdccc'
+let s:gui06        = 'f8f8f8'
 let s:gui07        = 'ffffff'
-let s:gui08        = 'f16c75'
-let s:gui09        = 'f7c67f'
-let s:gui0A        = 'f1fc79'
-let s:gui0B        = '37f499'
-let s:gui0C        = '04d1f9'
-let s:gui0D        = '39ddfd'
-let s:gui0E        = 'a48cf2'
-let s:gui0F        = 'f265b5'
-let s:gui10        = '171928'
-let s:gui11        = '0e0f1a'
-let s:gui12        = 'f89a9d'
-let s:gui13        = 'f9e9a1'
-let s:gui14        = '6fffc1'
-let s:gui15        = '6ce9ff'
-let s:gui16        = '7ae9ff'
-let s:gui17        = 'd4b3ff'
+let s:gui08        = 'ff0000'
+let s:gui09        = 'ffa500'
+let s:gui0A        = 'ffff00'
+let s:gui0B        = '61ce3c'
+let s:gui0C        = '93e0e3'
+let s:gui0D        = '4c83ff'
+let s:gui0E        = 'ff1493'
+let s:gui0F        = 'ff8c00'
+let s:gui10        = '000000'
+let s:gui11        = '000000'
+let s:gui12        = 'ff0000'
+let s:gui13        = 'ffff00'
+let s:gui14        = '61ce3c'
+let s:gui15        = '93e0e3'
+let s:gui16        = '4c83ff'
+let s:gui17        = 'ff1493'
 
 " Terminal colors
 let s:cterm00  = '00'
@@ -60,12 +60,12 @@ let s:cterm0E  = '05'
 let s:cterm0F  = '17'
 let s:cterm10  = s:cterm00
 let s:cterm11  = s:cterm00
-let s:cterm12  = '09'
-let s:cterm13  = '11'
-let s:cterm14  = '10'
-let s:cterm15  = '14'
-let s:cterm16  = '12'
-let s:cterm17  = '13'
+let s:cterm12  = '01'
+let s:cterm13  = '03'
+let s:cterm14  = '02'
+let s:cterm15  = '06'
+let s:cterm16  = '04'
+let s:cterm17  = '05'
 
 " base16_colorspace` and `base16colorspace` are legacy properties and
 " exist to keep existing setups from breaking
@@ -95,21 +95,21 @@ call s:create_color_globals()
 
 " Integrated Terminal colors
 let s:colors = [
-  \ '#212337',
-  \ '#f16c75',
-  \ '#37f499',
-  \ '#f1fc79',
-  \ '#39ddfd',
-  \ '#a48cf2',
-  \ '#04d1f9',
-  \ '#ebfafa',
-  \ '#7081d0',
-  \ '#f89a9d',
-  \ '#6fffc1',
-  \ '#f9e9a1',
-  \ '#7ae9ff',
-  \ '#d4b3ff',
-  \ '#6ce9ff',
+  \ '#000000',
+  \ '#ff0000',
+  \ '#61ce3c',
+  \ '#ffff00',
+  \ '#4c83ff',
+  \ '#ff1493',
+  \ '#93e0e3',
+  \ '#dcdccc',
+  \ '#4f4f4f',
+  \ '#ff0000',
+  \ '#61ce3c',
+  \ '#ffff00',
+  \ '#4c83ff',
+  \ '#ff1493',
+  \ '#93e0e3',
   \ '#ffffff'
 \]
 
@@ -160,7 +160,7 @@ let s:attrs = {
       \}
 
 " Theme setup
-let g:colors_name = 'base24-eldritch'
+let g:colors_name = 'base16-cyberpunk'
 
 " Highlighting function
 " Optional variables are attributes and guisp

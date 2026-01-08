@@ -11,7 +11,7 @@
 "   let g:tinted_shell_path=path/to/shell/scripts
 if !has('gui_running')
   if exists('g:tinted_shell_path')
-    execute 'silent !/bin/sh '.g:tinted_shell_path.'/base16/kanagawa-dragon.sh'
+    execute 'silent !/bin/sh '.g:tinted_shell_path.'/base24/kanagawa-dragon.sh'
   endif
 endif
 
@@ -32,14 +32,14 @@ let s:gui0C        = '8ea4a2'
 let s:gui0D        = '8ba4b0'
 let s:gui0E        = 'a292a3'
 let s:gui0F        = 'b98d7b'
-let s:gui10        = '181616'
-let s:gui11        = '181616'
-let s:gui12        = 'c4746e'
-let s:gui13        = 'c4b28a'
-let s:gui14        = '8a9a7b'
-let s:gui15        = '8ea4a2'
-let s:gui16        = '8ba4b0'
-let s:gui17        = 'a292a3'
+let s:gui10        = '12120f'
+let s:gui11        = '0d0c0c'
+let s:gui12        = 'e46876'
+let s:gui13        = 'e6c384'
+let s:gui14        = '87a987'
+let s:gui15        = '7aa89f'
+let s:gui16        = '7fb4ca'
+let s:gui17        = '938aa9'
 
 " Terminal colors
 let s:cterm00  = '00'
@@ -60,12 +60,12 @@ let s:cterm0E  = '05'
 let s:cterm0F  = '17'
 let s:cterm10  = s:cterm00
 let s:cterm11  = s:cterm00
-let s:cterm12  = '01'
-let s:cterm13  = '03'
-let s:cterm14  = '02'
-let s:cterm15  = '06'
-let s:cterm16  = '04'
-let s:cterm17  = '05'
+let s:cterm12  = '09'
+let s:cterm13  = '11'
+let s:cterm14  = '10'
+let s:cterm15  = '14'
+let s:cterm16  = '12'
+let s:cterm17  = '13'
 
 " base16_colorspace` and `base16colorspace` are legacy properties and
 " exist to keep existing setups from breaking
@@ -104,12 +104,12 @@ let s:colors = [
   \ '#8ea4a2',
   \ '#c5c9c5',
   \ '#625e5a',
-  \ '#c4746e',
-  \ '#8a9a7b',
-  \ '#c4b28a',
-  \ '#8ba4b0',
-  \ '#a292a3',
-  \ '#8ea4a2',
+  \ '#e46876',
+  \ '#87a987',
+  \ '#e6c384',
+  \ '#7fb4ca',
+  \ '#938aa9',
+  \ '#7aa89f',
   \ '#c5c9c5'
 \]
 
@@ -160,7 +160,7 @@ let s:attrs = {
       \}
 
 " Theme setup
-let g:colors_name = 'base16-kanagawa-dragon'
+let g:colors_name = 'base24-kanagawa-dragon'
 
 " Highlighting function
 " Optional variables are attributes and guisp

@@ -1,7 +1,7 @@
 " vi:syntax=vim
 
 " tinted-vim (https://github.com/tinted-theming/tinted-vim)
-" Scheme name: Github Light
+" Scheme name: Github Dark Dimmed
 " Scheme author: Tinted Theming (https://github.com/tinted-theming)
 " Template author: Tinted Theming (https://github.com/tinted-theming)
 
@@ -11,35 +11,35 @@
 "   let g:tinted_shell_path=path/to/shell/scripts
 if !has('gui_running')
   if exists('g:tinted_shell_path')
-    execute 'silent !/bin/sh '.g:tinted_shell_path.'/base24/github-light.sh'
+    execute 'silent !/bin/sh '.g:tinted_shell_path.'/base24/github-dark-dimmed.sh'
   endif
 endif
 
 " GUI colors
-let s:gui00        = 'ffffff'
-let s:gui01        = 'f6f8fa'
-let s:gui02        = 'afb8c1'
-let s:gui03        = '8c959f'
-let s:gui04        = '6e7781'
-let s:gui05        = '424a53'
-let s:gui06        = '32383f'
-let s:gui07        = '1f2328'
-let s:gui08        = '953800'
-let s:gui09        = '0550ae'
-let s:gui0A        = 'bf8700'
-let s:gui0B        = '0a3069'
-let s:gui0C        = '116329'
-let s:gui0D        = '8250df'
-let s:gui0E        = 'cf222e'
-let s:gui0F        = '82071e'
-let s:gui10        = '1f2328'
+let s:gui00        = '22272e'
+let s:gui01        = '2d333b'
+let s:gui02        = '545d68'
+let s:gui03        = '636e7b'
+let s:gui04        = '768390'
+let s:gui05        = 'adbac7'
+let s:gui06        = 'cdd9e5'
+let s:gui07        = 'ffffff'
+let s:gui08        = 'f69d50'
+let s:gui09        = '6cb6ff'
+let s:gui0A        = 'ae7c14'
+let s:gui0B        = '96d0ff'
+let s:gui0C        = '8ddb8c'
+let s:gui0D        = 'dcbdfb'
+let s:gui0E        = 'f47067'
+let s:gui0F        = 'ff938a'
+let s:gui10        = '1c2128'
 let s:gui11        = '000000'
-let s:gui12        = 'ff8182'
-let s:gui13        = 'd4a72c'
-let s:gui14        = '4ac26b'
-let s:gui15        = '49bcb7'
-let s:gui16        = '54aeff'
-let s:gui17        = 'c297ff'
+let s:gui12        = 'f47067'
+let s:gui13        = 'c69026'
+let s:gui14        = '57ab5a'
+let s:gui15        = '33b3ae'
+let s:gui16        = '539bf5'
+let s:gui17        = 'b083f0'
 
 " Terminal colors
 let s:cterm00  = '00'
@@ -95,22 +95,22 @@ call s:create_color_globals()
 
 " Integrated Terminal colors
 let s:colors = [
-  \ '#ffffff',
-  \ '#953800',
-  \ '#0a3069',
-  \ '#bf8700',
-  \ '#8250df',
-  \ '#cf222e',
-  \ '#116329',
-  \ '#424a53',
-  \ '#8c959f',
-  \ '#ff8182',
-  \ '#4ac26b',
-  \ '#d4a72c',
-  \ '#54aeff',
-  \ '#c297ff',
-  \ '#49bcb7',
-  \ '#1f2328'
+  \ '#22272e',
+  \ '#f69d50',
+  \ '#96d0ff',
+  \ '#ae7c14',
+  \ '#dcbdfb',
+  \ '#f47067',
+  \ '#8ddb8c',
+  \ '#adbac7',
+  \ '#636e7b',
+  \ '#f47067',
+  \ '#57ab5a',
+  \ '#c69026',
+  \ '#539bf5',
+  \ '#b083f0',
+  \ '#33b3ae',
+  \ '#ffffff'
 \]
 
 if has('nvim')
@@ -160,7 +160,7 @@ let s:attrs = {
       \}
 
 " Theme setup
-let g:colors_name = 'base24-github-light'
+let g:colors_name = 'base24-github-dark-dimmed'
 
 " Highlighting function
 " Optional variables are attributes and guisp

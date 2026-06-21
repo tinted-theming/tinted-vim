@@ -1,7 +1,7 @@
 " vi:syntax=vim
 
 " tinted-vim (https://github.com/tinted-theming/tinted-vim)
-" Scheme name: Github Light
+" Scheme name: Github Light Colorblind
 " Scheme author: Tinted Theming (https://github.com/tinted-theming)
 " Template author: Tinted Theming (https://github.com/tinted-theming)
 
@@ -11,7 +11,7 @@
 "   let g:tinted_shell_path=path/to/shell/scripts
 if !has('gui_running')
   if exists('g:tinted_shell_path')
-    execute 'silent !/bin/sh '.g:tinted_shell_path.'/base24/github-light.sh'
+    execute 'silent !/bin/sh '.g:tinted_shell_path.'/base24/github-light-colorblind.sh'
   endif
 endif
 
@@ -23,20 +23,20 @@ let s:gui03        = '8c959f'
 let s:gui04        = '6e7781'
 let s:gui05        = '424a53'
 let s:gui06        = '32383f'
-let s:gui07        = '1f2328'
-let s:gui08        = '953800'
+let s:gui07        = '24292f'
+let s:gui08        = '8a4600'
 let s:gui09        = '0550ae'
 let s:gui0A        = 'bf8700'
 let s:gui0B        = '0a3069'
-let s:gui0C        = '116329'
+let s:gui0C        = '0550ae'
 let s:gui0D        = '8250df'
-let s:gui0E        = 'cf222e'
-let s:gui0F        = '82071e'
-let s:gui10        = '1f2328'
+let s:gui0E        = 'b35900'
+let s:gui0F        = '6f3800'
+let s:gui10        = '24292f'
 let s:gui11        = '000000'
-let s:gui12        = 'ff8182'
+let s:gui12        = 'f79939'
 let s:gui13        = 'd4a72c'
-let s:gui14        = '4ac26b'
+let s:gui14        = '54aeff'
 let s:gui15        = '49bcb7'
 let s:gui16        = '54aeff'
 let s:gui17        = 'c297ff'
@@ -96,21 +96,21 @@ call s:create_color_globals()
 " Integrated Terminal colors
 let s:colors = [
   \ '#ffffff',
-  \ '#953800',
+  \ '#8a4600',
   \ '#0a3069',
   \ '#bf8700',
   \ '#8250df',
-  \ '#cf222e',
-  \ '#116329',
+  \ '#b35900',
+  \ '#0550ae',
   \ '#424a53',
   \ '#8c959f',
-  \ '#ff8182',
-  \ '#4ac26b',
+  \ '#f79939',
+  \ '#54aeff',
   \ '#d4a72c',
   \ '#54aeff',
   \ '#c297ff',
   \ '#49bcb7',
-  \ '#1f2328'
+  \ '#24292f'
 \]
 
 if has('nvim')
@@ -160,7 +160,7 @@ let s:attrs = {
       \}
 
 " Theme setup
-let g:colors_name = 'base24-github-light'
+let g:colors_name = 'base24-github-light-colorblind'
 
 " Highlighting function
 " Optional variables are attributes and guisp

@@ -1,8 +1,8 @@
 " vi:syntax=vim
 
 " tinted-vim (https://github.com/tinted-theming/tinted-vim)
-" Scheme name: Apprentice
-" Scheme author: Romain Lafourcade (https://github.com/romainl)
+" Scheme name: Corduroy Dark
+" Scheme author: taysatte (https://github.com/taysatte)
 " Template author: Tinted Theming (https://github.com/tinted-theming)
 
 " This enables the coresponding base16-shell script to run so that
@@ -11,35 +11,35 @@
 "   let g:tinted_shell_path=path/to/shell/scripts
 if !has('gui_running')
   if exists('g:tinted_shell_path')
-    execute 'silent !/bin/sh '.g:tinted_shell_path.'/base16/apprentice.sh'
+    execute 'silent !/bin/sh '.g:tinted_shell_path.'/base16/corduroy-dark.sh'
   endif
 endif
 
 " GUI colors
-let s:gui00        = '262626'
-let s:gui01        = '303030'
-let s:gui02        = '3a3a3a'
-let s:gui03        = '444444'
-let s:gui04        = '6c6c6c'
-let s:gui05        = 'bcbcbc'
-let s:gui06        = 'dfdfdf'
-let s:gui07        = 'ffffff'
-let s:gui08        = 'af5f5f'
-let s:gui09        = 'ff8700'
-let s:gui0A        = '87875f'
-let s:gui0B        = '5f875f'
-let s:gui0C        = '5f8787'
-let s:gui0D        = '5f87af'
-let s:gui0E        = '5f5f87'
-let s:gui0F        = 'af5f5f'
-let s:gui10        = '262626'
-let s:gui11        = '262626'
-let s:gui12        = 'af5f5f'
-let s:gui13        = '87875f'
-let s:gui14        = '5f875f'
-let s:gui15        = '5f8787'
-let s:gui16        = '5f87af'
-let s:gui17        = '5f5f87'
+let s:gui00        = '141016'
+let s:gui01        = '1b151e'
+let s:gui02        = '221a26'
+let s:gui03        = '7d7082'
+let s:gui04        = '9a8d9e'
+let s:gui05        = 'ddd8df'
+let s:gui06        = 'ddd8df'
+let s:gui07        = '5a5160'
+let s:gui08        = 'e8758a'
+let s:gui09        = 'f0a89b'
+let s:gui0A        = 'f0bd9c'
+let s:gui0B        = '55a0a0'
+let s:gui0C        = 'f0a89b'
+let s:gui0D        = 'dc92a3'
+let s:gui0E        = 'cf98c4'
+let s:gui0F        = '9a8d9e'
+let s:gui10        = '141016'
+let s:gui11        = '141016'
+let s:gui12        = 'e8758a'
+let s:gui13        = 'f0bd9c'
+let s:gui14        = '55a0a0'
+let s:gui15        = 'f0a89b'
+let s:gui16        = 'dc92a3'
+let s:gui17        = 'cf98c4'
 
 " Terminal colors
 let s:cterm00  = '00'
@@ -95,22 +95,22 @@ call s:create_color_globals()
 
 " Integrated Terminal colors
 let s:colors = [
-  \ '#262626',
-  \ '#af5f5f',
-  \ '#5f875f',
-  \ '#87875f',
-  \ '#5f87af',
-  \ '#5f5f87',
-  \ '#5f8787',
-  \ '#bcbcbc',
-  \ '#444444',
-  \ '#af5f5f',
-  \ '#5f875f',
-  \ '#87875f',
-  \ '#5f87af',
-  \ '#5f5f87',
-  \ '#5f8787',
-  \ '#ffffff'
+  \ '#141016',
+  \ '#e8758a',
+  \ '#55a0a0',
+  \ '#f0bd9c',
+  \ '#dc92a3',
+  \ '#cf98c4',
+  \ '#f0a89b',
+  \ '#ddd8df',
+  \ '#7d7082',
+  \ '#e8758a',
+  \ '#55a0a0',
+  \ '#f0bd9c',
+  \ '#dc92a3',
+  \ '#cf98c4',
+  \ '#f0a89b',
+  \ '#5a5160'
 \]
 
 if has('nvim')
@@ -160,7 +160,7 @@ let s:attrs = {
       \}
 
 " Theme setup
-let g:colors_name = 'base16-apprentice'
+let g:colors_name = 'base16-corduroy-dark'
 
 " Highlighting function
 " Optional variables are attributes and guisp

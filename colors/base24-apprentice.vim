@@ -11,7 +11,7 @@
 "   let g:tinted_shell_path=path/to/shell/scripts
 if !has('gui_running')
   if exists('g:tinted_shell_path')
-    execute 'silent !/bin/sh '.g:tinted_shell_path.'/base16/apprentice.sh'
+    execute 'silent !/bin/sh '.g:tinted_shell_path.'/base24/apprentice.sh'
   endif
 endif
 
@@ -32,14 +32,14 @@ let s:gui0C        = '5f8787'
 let s:gui0D        = '5f87af'
 let s:gui0E        = '5f5f87'
 let s:gui0F        = 'af5f5f'
-let s:gui10        = '262626'
-let s:gui11        = '262626'
-let s:gui12        = 'af5f5f'
-let s:gui13        = '87875f'
-let s:gui14        = '5f875f'
-let s:gui15        = '5f8787'
-let s:gui16        = '5f87af'
-let s:gui17        = '5f5f87'
+let s:gui10        = '1c1c1c'
+let s:gui11        = '121212'
+let s:gui12        = 'ff8700'
+let s:gui13        = 'ffffaf'
+let s:gui14        = '87af87'
+let s:gui15        = '5fafaf'
+let s:gui16        = '87afd7'
+let s:gui17        = '8787af'
 
 " Terminal colors
 let s:cterm00  = '00'
@@ -60,12 +60,12 @@ let s:cterm0E  = '05'
 let s:cterm0F  = '17'
 let s:cterm10  = s:cterm00
 let s:cterm11  = s:cterm00
-let s:cterm12  = '01'
-let s:cterm13  = '03'
-let s:cterm14  = '02'
-let s:cterm15  = '06'
-let s:cterm16  = '04'
-let s:cterm17  = '05'
+let s:cterm12  = '09'
+let s:cterm13  = '11'
+let s:cterm14  = '10'
+let s:cterm15  = '14'
+let s:cterm16  = '12'
+let s:cterm17  = '13'
 
 " base16_colorspace` and `base16colorspace` are legacy properties and
 " exist to keep existing setups from breaking
@@ -104,12 +104,12 @@ let s:colors = [
   \ '#5f8787',
   \ '#bcbcbc',
   \ '#444444',
-  \ '#af5f5f',
-  \ '#5f875f',
-  \ '#87875f',
-  \ '#5f87af',
-  \ '#5f5f87',
-  \ '#5f8787',
+  \ '#ff8700',
+  \ '#87af87',
+  \ '#ffffaf',
+  \ '#87afd7',
+  \ '#8787af',
+  \ '#5fafaf',
   \ '#ffffff'
 \]
 
@@ -160,7 +160,7 @@ let s:attrs = {
       \}
 
 " Theme setup
-let g:colors_name = 'base16-apprentice'
+let g:colors_name = 'base24-apprentice'
 
 " Highlighting function
 " Optional variables are attributes and guisp

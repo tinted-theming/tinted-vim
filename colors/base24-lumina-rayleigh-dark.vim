@@ -16,30 +16,30 @@ if !has('gui_running')
 endif
 
 " GUI colors
-let s:gui00        = '14182c'
-let s:gui01        = '181c33'
-let s:gui02        = '21263d'
-let s:gui03        = '2b3048'
-let s:gui04        = '636b87'
-let s:gui05        = 'd4dbea'
-let s:gui06        = 'abb0c3'
-let s:gui07        = 'd4dbea'
-let s:gui08        = 'da6d65'
-let s:gui09        = 'f2b99f'
-let s:gui0A        = 'f8c970'
-let s:gui0B        = '96d2a1'
-let s:gui0C        = 'acdae6'
-let s:gui0D        = '7cbdff'
-let s:gui0E        = 'b897f0'
-let s:gui0F        = 'ed9ecb'
-let s:gui10        = '0a0d1e'
-let s:gui11        = '0e1124'
-let s:gui12        = 'e69088'
-let s:gui13        = 'ffe4b4'
-let s:gui14        = 'afedba'
-let s:gui15        = 'bff2ff'
-let s:gui16        = 'aed6ff'
-let s:gui17        = 'ffbee2'
+let s:gui00        = '091d30'
+let s:gui01        = '0b2237'
+let s:gui02        = '152c42'
+let s:gui03        = '1f364d'
+let s:gui04        = '567089'
+let s:gui05        = 'd4dfeb'
+let s:gui06        = 'a2b3c5'
+let s:gui07        = 'd4dfeb'
+let s:gui08        = 'd96d65'
+let s:gui09        = 'faac77'
+let s:gui0A        = 'f1cc79'
+let s:gui0B        = '96d2a2'
+let s:gui0C        = 'afdee6'
+let s:gui0D        = '6fc3ff'
+let s:gui0E        = 'bf9ef1'
+let s:gui0F        = 'eea3c9'
+let s:gui10        = '021122'
+let s:gui11        = '031628'
+let s:gui12        = 'e59088'
+let s:gui13        = 'ffe5ad'
+let s:gui14        = 'aeedbb'
+let s:gui15        = 'b6f4ff'
+let s:gui16        = 'aadaff'
+let s:gui17        = 'ffc3e0'
 
 " Terminal colors
 let s:cterm00  = '00'
@@ -95,22 +95,22 @@ call s:create_color_globals()
 
 " Integrated Terminal colors
 let s:colors = [
-  \ '#14182c',
-  \ '#da6d65',
-  \ '#96d2a1',
-  \ '#f8c970',
-  \ '#7cbdff',
-  \ '#b897f0',
-  \ '#acdae6',
-  \ '#d4dbea',
-  \ '#2b3048',
-  \ '#e69088',
-  \ '#afedba',
-  \ '#ffe4b4',
-  \ '#aed6ff',
-  \ '#ffbee2',
-  \ '#bff2ff',
-  \ '#d4dbea'
+  \ '#091d30',
+  \ '#d96d65',
+  \ '#96d2a2',
+  \ '#f1cc79',
+  \ '#6fc3ff',
+  \ '#bf9ef1',
+  \ '#afdee6',
+  \ '#d4dfeb',
+  \ '#1f364d',
+  \ '#e59088',
+  \ '#aeedbb',
+  \ '#ffe5ad',
+  \ '#aadaff',
+  \ '#ffc3e0',
+  \ '#b6f4ff',
+  \ '#d4dfeb'
 \]
 
 if has('nvim')

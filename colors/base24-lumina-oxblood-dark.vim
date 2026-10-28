@@ -16,29 +16,29 @@ if !has('gui_running')
 endif
 
 " GUI colors
-let s:gui00        = '23171b'
-let s:gui01        = '291b20'
-let s:gui02        = '332529'
-let s:gui03        = '3d2f33'
-let s:gui04        = '79686d'
-let s:gui05        = 'e4d2d7'
-let s:gui06        = 'b9adb1'
-let s:gui07        = 'e4d2d7'
-let s:gui08        = 'de6961'
-let s:gui09        = 'fca970'
+let s:gui00        = '200f16'
+let s:gui01        = '26131b'
+let s:gui02        = '301c24'
+let s:gui03        = '3b262e'
+let s:gui04        = '79616a'
+let s:gui05        = 'e8d6dc'
+let s:gui06        = 'bdacb2'
+let s:gui07        = 'e8d6dc'
+let s:gui08        = 'db6c63'
+let s:gui09        = 'fbac74'
 let s:gui0A        = 'f9c875'
 let s:gui0B        = '7dc797'
-let s:gui0C        = '00bed0'
-let s:gui0D        = '96c3fb'
-let s:gui0E        = 'beb5fc'
+let s:gui0C        = '6fcad4'
+let s:gui0D        = '9ac3f8'
+let s:gui0E        = 'bfb6f9'
 let s:gui0F        = 'ddb7ed'
-let s:gui10        = '160c10'
-let s:gui11        = '1c1014'
-let s:gui12        = 'e98e86'
+let s:gui10        = '13060b'
+let s:gui11        = '19090f'
+let s:gui12        = 'e78f86'
 let s:gui13        = 'ffe4b8'
-let s:gui14        = '98e1b1'
-let s:gui15        = '76d2df'
-let s:gui16        = 'c0dcff'
+let s:gui14        = '9ce0b2'
+let s:gui15        = '8de4ed'
+let s:gui16        = 'c2dcff'
 let s:gui17        = 'f2d5ff'
 
 " Terminal colors
@@ -95,22 +95,22 @@ call s:create_color_globals()
 
 " Integrated Terminal colors
 let s:colors = [
-  \ '#23171b',
-  \ '#de6961',
+  \ '#200f16',
+  \ '#db6c63',
   \ '#7dc797',
   \ '#f9c875',
-  \ '#96c3fb',
-  \ '#beb5fc',
-  \ '#00bed0',
-  \ '#e4d2d7',
-  \ '#3d2f33',
-  \ '#e98e86',
-  \ '#98e1b1',
+  \ '#9ac3f8',
+  \ '#bfb6f9',
+  \ '#6fcad4',
+  \ '#e8d6dc',
+  \ '#3b262e',
+  \ '#e78f86',
+  \ '#9ce0b2',
   \ '#ffe4b8',
-  \ '#c0dcff',
+  \ '#c2dcff',
   \ '#f2d5ff',
-  \ '#76d2df',
-  \ '#e4d2d7'
+  \ '#8de4ed',
+  \ '#e8d6dc'
 \]
 
 if has('nvim')

@@ -29,8 +29,8 @@ let s:gui09        = 'ff851b'
 let s:gui0A        = 'ffdc00'
 let s:gui0B        = '2ecc40'
 let s:gui0C        = '39cccc'
-let s:gui0D        = 'b10dc9'
-let s:gui0E        = '7fdbff'
+let s:gui0D        = '7fdbff'
+let s:gui0E        = 'b10dc9'
 let s:gui0F        = 'd75d00'
 let s:gui10        = '10131c'
 let s:gui11        = '060912'
@@ -38,8 +38,8 @@ let s:gui12        = 'ff5f54'
 let s:gui13        = 'fffa1e'
 let s:gui14        = '4cea5e'
 let s:gui15        = '57eaea'
-let s:gui16        = 'cf2be7'
-let s:gui17        = '9df9ff'
+let s:gui16        = '9df9ff'
+let s:gui17        = 'cf2be7'
 
 " Terminal colors
 let s:cterm00  = '00'
@@ -99,16 +99,16 @@ let s:colors = [
   \ '#ff4136',
   \ '#2ecc40',
   \ '#ffdc00',
-  \ '#b10dc9',
   \ '#7fdbff',
+  \ '#b10dc9',
   \ '#39cccc',
   \ '#e0e5ec',
   \ '#73879c',
   \ '#ff5f54',
   \ '#4cea5e',
   \ '#fffa1e',
-  \ '#cf2be7',
   \ '#9df9ff',
+  \ '#cf2be7',
   \ '#57eaea',
   \ '#ffffff'
 \]

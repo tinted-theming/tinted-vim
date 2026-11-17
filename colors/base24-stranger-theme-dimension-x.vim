@@ -24,22 +24,22 @@ let s:gui04        = 'b8a5a5'
 let s:gui05        = 'e8d5d5'
 let s:gui06        = 'f4e1e1'
 let s:gui07        = 'ffffff'
-let s:gui08        = 'ff55aa'
+let s:gui08        = 'ff6b6b'
 let s:gui09        = 'ff6b6b'
-let s:gui0A        = 'bca89f'
-let s:gui0B        = '8b7355'
-let s:gui0C        = 'd19a66'
+let s:gui0A        = 'd19a66'
+let s:gui0B        = '8fae7e'
+let s:gui0C        = '7fb5b0'
 let s:gui0D        = 'c678dd'
-let s:gui0E        = 'e06c75'
+let s:gui0E        = 'ff55aa'
 let s:gui0F        = 'd74343'
 let s:gui10        = '141010'
 let s:gui11        = '0a0606'
-let s:gui12        = 'ff73c8'
-let s:gui13        = 'dac6bd'
-let s:gui14        = 'a99173'
-let s:gui15        = 'efb884'
+let s:gui12        = 'ff8989'
+let s:gui13        = 'efb884'
+let s:gui14        = 'adcc9c'
+let s:gui15        = '9dd3ce'
 let s:gui16        = 'e496fb'
-let s:gui17        = 'fe8a93'
+let s:gui17        = 'ff73c8'
 
 " Terminal colors
 let s:cterm00  = '00'
@@ -96,20 +96,20 @@ call s:create_color_globals()
 " Integrated Terminal colors
 let s:colors = [
   \ '#1e1a1a',
-  \ '#ff55aa',
-  \ '#8b7355',
-  \ '#bca89f',
-  \ '#c678dd',
-  \ '#e06c75',
+  \ '#ff6b6b',
+  \ '#8fae7e',
   \ '#d19a66',
+  \ '#c678dd',
+  \ '#ff55aa',
+  \ '#7fb5b0',
   \ '#e8d5d5',
   \ '#9a7c7c',
-  \ '#ff73c8',
-  \ '#a99173',
-  \ '#dac6bd',
-  \ '#e496fb',
-  \ '#fe8a93',
+  \ '#ff8989',
+  \ '#adcc9c',
   \ '#efb884',
+  \ '#e496fb',
+  \ '#ff73c8',
+  \ '#9dd3ce',
   \ '#ffffff'
 \]
 

@@ -2,7 +2,7 @@
 
 " tinted-vim (https://github.com/tinted-theming/tinted-vim)
 " Scheme name: Penumbra Dark Contrast Plus
-" Scheme author: Zachary Weiss (https://github.com/zacharyweiss)
+" Scheme author: Neal McKee (https://github.com/nealmckee/penumbra)
 " Template author: Tinted Theming (https://github.com/tinted-theming)
 
 " This enables the coresponding base16-shell script to run so that
@@ -16,30 +16,30 @@ if !has('gui_running')
 endif
 
 " GUI colors
-let s:gui00        = '181b1f'
-let s:gui01        = '24272b'
-let s:gui02        = '3e4044'
-let s:gui03        = '636363'
-let s:gui04        = '9e9e9e'
-let s:gui05        = 'cecece'
-let s:gui06        = 'fff7ed'
-let s:gui07        = 'fffdfb'
-let s:gui08        = 'df7f78'
-let s:gui09        = 'ce9042'
-let s:gui0A        = '9ca748'
-let s:gui0B        = '50b584'
-let s:gui0C        = '00b3c2'
-let s:gui0D        = '61a3e6'
-let s:gui0E        = 'a48fe1'
-let s:gui0F        = 'd080b6'
-let s:gui10        = '181b1f'
-let s:gui11        = '181b1f'
-let s:gui12        = 'df7f78'
-let s:gui13        = '9ca748'
-let s:gui14        = '50b584'
-let s:gui15        = '00b3c2'
-let s:gui16        = '61a3e6'
-let s:gui17        = 'a48fe1'
+let s:gui00        = '1d2024'
+let s:gui01        = '292b30'
+let s:gui02        = '404246'
+let s:gui03        = '5b5d62'
+let s:gui04        = '7f7f81'
+let s:gui05        = '999999'
+let s:gui06        = 'bab8b4'
+let s:gui07        = 'efe8dd'
+let s:gui08        = 'cd6b76'
+let s:gui09        = 'c58145'
+let s:gui0A        = 'a39720'
+let s:gui0B        = '58a061'
+let s:gui0C        = '009894'
+let s:gui0D        = '008fc6'
+let s:gui0E        = '7d82c0'
+let s:gui0F        = 'ac72b2'
+let s:gui10        = '1d2024'
+let s:gui11        = '1d2024'
+let s:gui12        = 'cd6b76'
+let s:gui13        = 'a39720'
+let s:gui14        = '58a061'
+let s:gui15        = '009894'
+let s:gui16        = '008fc6'
+let s:gui17        = '7d82c0'
 
 " Terminal colors
 let s:cterm00  = '00'
@@ -95,22 +95,22 @@ call s:create_color_globals()
 
 " Integrated Terminal colors
 let s:colors = [
-  \ '#181b1f',
-  \ '#df7f78',
-  \ '#50b584',
-  \ '#9ca748',
-  \ '#61a3e6',
-  \ '#a48fe1',
-  \ '#00b3c2',
-  \ '#cecece',
-  \ '#636363',
-  \ '#df7f78',
-  \ '#50b584',
-  \ '#9ca748',
-  \ '#61a3e6',
-  \ '#a48fe1',
-  \ '#00b3c2',
-  \ '#fffdfb'
+  \ '#1d2024',
+  \ '#cd6b76',
+  \ '#58a061',
+  \ '#a39720',
+  \ '#008fc6',
+  \ '#7d82c0',
+  \ '#009894',
+  \ '#999999',
+  \ '#5b5d62',
+  \ '#cd6b76',
+  \ '#58a061',
+  \ '#a39720',
+  \ '#008fc6',
+  \ '#7d82c0',
+  \ '#009894',
+  \ '#efe8dd'
 \]
 
 if has('nvim')
